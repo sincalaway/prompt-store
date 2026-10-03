@@ -4,12 +4,6 @@
 
 一个专为 AI 绘画（Stable Diffusion、ComfyUI 等）设计的专业提示词管理工具，帮助您高效地组织、管理和使用提示词。
 
-## 演示图
-
-体验地址：https://prompt.refrain.com.cn
-
-![](web.png)
-
 ## 📋 目录
 
 - [项目介绍](#项目介绍)
