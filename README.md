@@ -146,7 +146,7 @@ npm run preview
 
    | 配置项 | 值 |
    | :--- | :--- |
-   | Framework preset | `Vite` |
+   | Framework preset | `Vite或vue` |
    | Build command | `npm run build` |
    | Build output directory | `dist` |
    | Root directory | `/` |
