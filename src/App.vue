@@ -36,6 +36,24 @@
             <div class="mini-stat accent"><span class="mini-stat-value">{{ store.showNSFW ? 'ALL' : 'SFW' }}</span><span>内容模式</span></div>
           </div>
         </div>
+        <section class="formula-guide" aria-labelledby="formula-title">
+          <div class="formula-guide-head">
+            <div>
+              <span class="section-kicker">PROMPT FORMULA</span>
+              <h3 id="formula-title">提示词构成公式</h3>
+            </div>
+            <span class="formula-example">主体 + 场景 + 风格 + 镜头语言 + 氛围词 + 细节修饰</span>
+          </div>
+          <div class="formula-steps">
+            <div v-for="step in formulaSteps" :key="step.title" class="formula-step">
+              <span class="formula-step-index">{{ step.index }}</span>
+              <div>
+                <strong>{{ step.title }}</strong>
+                <p>{{ step.description }}</p>
+              </div>
+            </div>
+          </div>
+        </section>
         <RightPanel />
       </main>
     </div>
@@ -48,4 +66,13 @@ import LeftPanel from './components/LeftPanel.vue'
 import RightPanel from './components/RightPanel.vue'
 
 const store = usePromptStore()
+
+const formulaSteps = [
+  { index: '01', title: '主体', description: '人物、物体与动作，先确定画面主角' },
+  { index: '02', title: '场景', description: '环境、地点与空间特征，补充画面背景' },
+  { index: '03', title: '风格', description: '艺术风格、媒介与表现手法' },
+  { index: '04', title: '镜头语言', description: '景别、视角、构图与镜头方向' },
+  { index: '05', title: '氛围词', description: '梦幻、孤独、宏伟等情绪与气质' },
+  { index: '06', title: '细节修饰', description: '光线、道具、质感与高分辨率细节' },
+]
 </script>
