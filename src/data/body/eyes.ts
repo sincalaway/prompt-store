@@ -133,8 +133,6 @@ export const items: PromptItem[] = [
   
   // 表情符号
   { chinese: "> < 眼", english: "> <" },
-  { chinese: "X3 眼", english: "X3" },
-  { chinese: "XD 眼", english: "XD" },
   { chinese: "DX 眼", english: "DX" },
   { chinese: "O o 眼", english: "O o" },
   { chinese: "0 0 眼", english: "0 0" },
@@ -142,12 +140,10 @@ export const items: PromptItem[] = [
   { chinese: "6 9 眼", english: "6 9" },
   { chinese: "@ @ 眼", english: "@ @" },
   { chinese: "^ ^ 眼", english: "^ ^" },
-  { chinese: "|_| 眼", english: "|_|" },
   { chinese: "= = 眼", english: "= =" },
   { chinese: "+ + 眼", english: "+ +" },
   { chinese: ". . 眼", english: ". ." },
   { chinese: "<o> <o> 眼", english: "<o> <o>" },
-  { chinese: "<|>_<|> 眼", english: "<|>_<|>" },
   { chinese: "X X 眼", english: "X X" },
   
   // 闭眼
@@ -155,9 +151,7 @@ export const items: PromptItem[] = [
   { chinese: "闭眼", english: "closed eyes" },
   { chinese: "皱眉闭眼", english: "wince" },
   { chinese: "闭一只眼", english: "one eye closed" },
-  { chinese: ";< 眼", english: ";<" },
   { chinese: ";> 眼", english: ";>" },
-  { chinese: ";p 眼", english: ";p" },
   
   // 眼部饰品和遮盖
   { chinese: "双手捂眼", english: "covering own eyes" },

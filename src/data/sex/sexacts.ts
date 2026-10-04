@@ -390,7 +390,6 @@ export const items: PromptItem[] = [
 
   // Facial Expressions
   { chinese: "面部表情", english: "Facial Expressions", nsfw: true },
-  { chinese: "口交脸 (咧嘴笑)", english: ":>=", nsfw: true },
   { chinese: "被干到失神", english: "fucked silly", nsfw: true },
   { chinese: "阿嘿颜", english: "ahegao", nsfw: true },
   { chinese: "とろ顔 (销魂脸)", english: "torogao", nsfw: true },
