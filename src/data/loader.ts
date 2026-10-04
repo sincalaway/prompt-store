@@ -5,28 +5,29 @@ import { mainCategoryConfigs } from './categoryConfig';
 // 动态导入所有提示词数据
 const promptDataCache: Record<string, PromptItem[]> = {};
 
-const getSourceCategory = (category: string, subCategory: string) => {
+const getSubConfig = (category: string, subCategory: string) => {
   const config = mainCategoryConfigs.find((item) => item.id === category);
-  const subConfig = config?.subCategories.find((item) => item.key === subCategory);
-  return subConfig?.sourceCategory || category;
+  return config?.subCategories.find((item) => item.key === subCategory);
 };
 
 // 加载指定公式分类下的提示词数据；sourceCategory 用于兼容原有 data 目录
 export async function loadPromptItems(category: string, subCategory: string): Promise<PromptItem[]> {
-  const sourceCategory = getSourceCategory(category, subCategory);
-  const cacheKey = `${sourceCategory}/${subCategory}`;
+  const subConfig = getSubConfig(category, subCategory);
+  const sourceCategory = subConfig?.sourceCategory || category;
+  const fileName = subConfig?.fileName || subCategory;
+  const cacheKey = `${sourceCategory}/${fileName}`;
 
   if (promptDataCache[cacheKey]) {
     return promptDataCache[cacheKey];
   }
 
   try {
-    const module = await import(`./${sourceCategory}/${subCategory}.ts`);
+    const module = await import(`./${sourceCategory}/${fileName}.ts`);
     const items = module.items || [];
     promptDataCache[cacheKey] = items;
     return items;
   } catch (error) {
-    console.error(`加载提示词失败：${sourceCategory}/${subCategory}`, error);
+    console.error(`加载提示词失败：${sourceCategory}/${fileName}`, error);
     return [];
   }
 }
