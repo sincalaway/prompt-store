@@ -394,3 +394,69 @@ h1, h2, p { margin: 0; } h1 { font-size: 18px; letter-spacing: -.02em; } h2 { fo
 @media (max-width: 560px) {
   .main-content .col-selected .weight-add-btn { font-size: 8px; padding: 3px 5px; }
 }
+
+/* 深色主题 UI 精修：保持原有蓝灰底色与绿色强调色 */
+.app-shell {
+  border-color: rgba(131,184,255,.22);
+  box-shadow: 0 28px 80px rgba(0,0,0,.46), 0 0 0 1px rgba(255,255,255,.02);
+}
+.app-header {
+  height: 76px;
+  background: linear-gradient(180deg, rgba(19,29,44,.94), rgba(17,25,37,.86));
+}
+.brand-mark { box-shadow: 0 0 26px rgba(158,232,112,.16), inset 0 1px 0 rgba(255,255,255,.35); }
+.content-heading { padding-bottom: 18px; }
+.content-heading h2 { line-height: 1.15; }
+.content-subtitle { max-width: 560px; line-height: 1.55; }
+.mini-stat { background: rgba(21,31,46,.58); box-shadow: inset 0 1px 0 rgba(255,255,255,.03); }
+.left-panel .primary-btn { position: relative; overflow: hidden; }
+.left-panel .primary-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  border-radius: 2px;
+  background: transparent;
+  transition: background .18s ease;
+}
+.left-panel .primary-btn:hover::after,
+.left-panel .primary-btn.active::after { background: var(--accent); }
+.left-panel .primary-btn.active { box-shadow: 0 8px 24px rgba(158,232,112,.15), inset 0 1px 0 rgba(255,255,255,.25); }
+.card-section { box-shadow: 0 16px 34px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.03) !important; }
+.card-header { min-height: 34px; }
+.card-header h3 { letter-spacing: -.01em; }
+.badge { box-shadow: 0 0 0 3px rgba(158,232,112,.03) !important; }
+.category-btn, .sub-btn, .action-btn, .clear-btn, .undo-btn, .filter-toggle {
+  transition: color .18s ease, background .18s ease, border-color .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+.category-btn:focus-visible, .sub-btn:focus-visible, .action-btn:focus-visible,
+.clear-btn:focus-visible, .undo-btn:focus-visible, .filter-toggle:focus-visible,
+.search-input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.category-btn .btn-count { font-family: 'DM Mono', monospace; font-size: 10px !important; }
+.sub-btn { line-height: 1.25; }
+.sub-btn.selected { box-shadow: 0 0 0 2px rgba(158,232,112,.16), 0 8px 18px rgba(0,0,0,.18) !important; }
+.formula-guide { box-shadow: 0 10px 26px rgba(0,0,0,.14), inset 0 1px 0 rgba(255,255,255,.05); }
+.formula-step { transition: background .18s ease, border-color .18s ease, transform .18s ease; }
+.formula-step:hover { border-color: rgba(158,232,112,.22); background: rgba(21,31,46,.58); transform: translateY(-1px); }
+.search-input-wrapper { box-shadow: inset 0 1px 0 rgba(255,255,255,.025), 0 8px 20px rgba(0,0,0,.08) !important; }
+.nsfw-toggle { box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 8px 20px rgba(0,0,0,.1); }
+.action-bar { padding-top: 1px; }
+.action-btn, .clear-btn, .undo-btn { box-shadow: inset 0 1px 0 rgba(255,255,255,.025), 0 5px 14px rgba(0,0,0,.08) !important; }
+.action-btn:hover, .clear-btn:hover, .undo-btn.can-undo:hover { box-shadow: 0 8px 18px rgba(0,0,0,.16) !important; }
+.content-container::-webkit-scrollbar { width: 7px; height: 7px; }
+.content-container::-webkit-scrollbar-thumb { background: #344762; border: 2px solid transparent; background-clip: padding-box; }
+@media (max-width: 900px) {
+  .app-shell { min-height: calc(100vh - 24px); }
+  .formula-guide { margin-bottom: 12px; }
+}
+@media (max-width: 560px) {
+  .app-header { padding: 0 18px; }
+  .main-content { padding: 18px 14px 16px; }
+  .content-heading { padding-bottom: 14px; }
+  .formula-step { padding: 9px; }
+}
