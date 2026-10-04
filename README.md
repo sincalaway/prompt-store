@@ -78,6 +78,7 @@ Prompt Store 适用于 Stable Diffusion、ComfyUI 等 AI 绘画场景，帮助�
 - 点击提示词加入或移除已选列表。
 - 通过拖拽调整提示词顺序。
 - 点击已选提示词展开权重控制。
+- 点击卡片中的 **加权 +0.1** 按钮，可自动增加权重并生成带权重的提示词。
 - 权重范围为 `0.1–5.0`，步长为 `0.1`。
 - 支持单项删除、全部清空和清空撤销。
 - 已选内容会保存到浏览器 `localStorage`。
@@ -90,7 +91,7 @@ Prompt Store 适用于 Stable Diffusion、ComfyUI 等 AI 绘画场景，帮助�
 - **复制格式化提示词**：清理多余空白、按英文内容去重，并统一使用 `, ` 分隔。
 - **复制全部中文**：复制中文提示词列表。
 
-非 `1.0` 权重会输出为 Stable Diffusion 常用格式，例如：
+点击加权按钮后，英文提示词会自动显示并复制为带权重格式；非 `1.0` 权重会输出为 Stable Diffusion 常用格式，例如：
 
 ```text
 (masterpiece:1.2), detailed background, soft lighting

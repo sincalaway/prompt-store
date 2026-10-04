@@ -29,6 +29,7 @@
           @drag-end="onDragEnd"
           @click="onTagClick"
           @weight-adjust="onWeightAdjust"
+          @weight-add="onWeightAdd"
           @delete="onDelete"
         />
       </div>
@@ -72,6 +73,11 @@ const onTagClick = (index: number) => {
 
 const onWeightAdjust = (index: number, delta: number) => {
   store.adjustWeight(index, delta);
+};
+
+const onWeightAdd = (index: number) => {
+  store.setActiveTagIndex(index);
+  store.adjustWeight(index, 0.1);
 };
 
 const onDelete = (index: number) => {

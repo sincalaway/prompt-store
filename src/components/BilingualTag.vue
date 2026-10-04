@@ -13,7 +13,18 @@
   >
     <span class="tag-copy">
       <span class="tag-chinese">{{ item.chinese }}</span>
-      <span class="tag-english">{{ item.english }}</span>
+      <span class="tag-english">
+        {{ weightedEnglish }}
+      </span>
+      <button
+        class="weight-add-btn"
+        :class="{ weighted: hasWeight }"
+        type="button"
+        title="增加 0.1 权重，并生成带权重的英文提示词"
+        @click.stop="onWeightAdd"
+      >
+        {{ hasWeight ? `加权 ${(item.weight ?? 1).toFixed(1)}` : "加权 +0.1" }}
+      </button>
     </span>
 
     <span v-if="showWeight" class="weight-controls" @click.stop>
@@ -27,6 +38,7 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
 import type { SelectedItem } from "../types";
 import "./styles/BilingualTag.scss"; // 导入样式
 
@@ -45,8 +57,15 @@ const emit = defineEmits<{
   (e: "drag-end"): void;
   (e: "click", index: number): void;
   (e: "weight-adjust", index: number, delta: number): void;
+  (e: "weight-add", index: number): void;
   (e: "delete", index: number): void;
 }>();
+
+const hasWeight = computed(() => Math.abs((props.item.weight ?? 1) - 1) > 0.001);
+const weightedEnglish = computed(() => {
+  const weight = props.item.weight ?? 1;
+  return hasWeight.value ? `(${props.item.english}:${weight.toFixed(1)})` : props.item.english;
+});
 
 const onDragStart = (e: DragEvent) => {
   e.dataTransfer?.setData("text/plain", props.index.toString());
@@ -85,6 +104,10 @@ const onClick = (e: MouseEvent) => {
 
 const onWeightAdjust = (delta: number) => {
   emit("weight-adjust", props.index, delta);
+};
+
+const onWeightAdd = () => {
+  emit("weight-add", props.index);
 };
 
 const onDelete = () => {

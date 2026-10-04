@@ -359,3 +359,38 @@ h1, h2, p { margin: 0; } h1 { font-size: 18px; letter-spacing: -.02em; } h2 { fo
 @media (max-width: 420px) {
   .formula-steps { grid-template-columns: 1fr; }
 }
+
+/* 已选提示词：一键加权并显示生成结果 */
+.main-content .col-selected .tag-copy { align-items: flex-start; }
+.main-content .col-selected .weight-add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  max-width: 100%;
+  margin-top: 1px;
+  padding: 3px 6px;
+  border: 1px solid rgba(158, 232, 112, .22);
+  border-radius: 5px;
+  color: var(--accent);
+  background: rgba(158, 232, 112, .08);
+  font: 600 9px/1.2 'DM Mono', monospace;
+  cursor: pointer;
+  transition: background .18s ease, border-color .18s ease, transform .18s ease;
+}
+.main-content .col-selected .weight-add-btn:hover {
+  border-color: rgba(158, 232, 112, .55);
+  background: rgba(158, 232, 112, .17);
+  transform: translateY(-1px);
+}
+.main-content .col-selected .weight-add-btn.weighted {
+  color: #10180d;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.main-content .col-selected .weight-add-btn.weighted:hover {
+  background: #b9f48e;
+}
+@media (max-width: 560px) {
+  .main-content .col-selected .weight-add-btn { font-size: 8px; padding: 3px 5px; }
+}
