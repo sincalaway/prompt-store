@@ -261,7 +261,7 @@ const loadAllSubCategoryCounts = async () => {
 
   for (const cat of categories) {
     const key = `${mainCategory}/${cat.key}`;
-    const items = await loadPromptItems(mainCategory, cat.fileName);
+    const items = await loadPromptItems(mainCategory, cat.key);
     totalCounts[key] = items.length;
     nsfwCounts[key] = items.filter((item) => item.nsfw).length;
   }
@@ -302,7 +302,7 @@ watch(
       );
 
       if (subConfig) {
-        const items = await loadPromptItems(mainCategory, subConfig.fileName);
+        const items = await loadPromptItems(mainCategory, subConfig.key);
         currentItems.value = items;
       } else {
         currentItems.value = [];

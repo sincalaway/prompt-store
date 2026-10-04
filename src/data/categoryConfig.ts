@@ -1,14 +1,27 @@
 // src/data/categoryConfig.ts
-// 六大公式分类：主体、场景、风格、镜头语言、氛围词、细节修饰
+// 面向用户的主题分类；每个主题小分类可以合并多个底层词库文件。
 import type { MainCategoryConfig, SubCategoryConfig } from '../types';
 
-const sub = (
-  sourceCategory: string,
+type SourceFile = [sourceCategory: string, fileName: string];
+
+const group = (
   key: string,
   label: string,
-  fileName: string,
+  sources: SourceFile[],
   nsfw = false
-): SubCategoryConfig => ({ key, label, fileName, nsfw, sourceCategory });
+): SubCategoryConfig => ({
+  key,
+  label,
+  fileName: sources[0][1],
+  sourceCategory: sources[0][0],
+  nsfw,
+  sourceFiles: sources.map(([sourceCategory, fileName]) => ({ sourceCategory, fileName })),
+});
+
+const files = (...names: string[]): SourceFile[] => names.map((name) => {
+  const [sourceCategory, fileName] = name.split('/');
+  return [sourceCategory, fileName];
+});
 
 export const mainCategoryConfigs: MainCategoryConfig[] = [
   {
@@ -17,100 +30,47 @@ export const mainCategoryConfigs: MainCategoryConfig[] = [
     icon: '🎯',
     nsfw: false,
     subCategories: [
-      // 人体与外观
-      sub('body', 'bodyparts', '身体部位', 'bodyparts'),
-      sub('body', 'appearance', '整体外观', 'appearance'),
-      sub('body', 'body_features', '身体特征', 'body_features'),
-      sub('body', 'breasts', '胸部', 'breasts'),
-      sub('body', 'face', '面部', 'face'),
-      sub('body', 'facial_features', '面部特征', 'facial_features'),
-      sub('body', 'ears', '耳朵', 'ears'),
-      sub('body', 'eyes', '眼睛', 'eyes'),
-      sub('body', 'eyebrows', '眉毛', 'eyebrows'),
-      sub('body', 'nose', '鼻子', 'nose'),
-      sub('body', 'hair', '头发', 'hair'),
-      sub('body', 'haircolor', '发色', 'haircolor'),
-      sub('body', 'hairstyles', '发型', 'hairstyles'),
-      sub('body', 'hand', '手', 'hand'),
-      sub('body', 'gestures', '手势', 'gestures'),
-      sub('body', 'feet', '脚', 'feet'),
-      sub('body', 'shoulders', '肩膀', 'shoulders'),
-      sub('body', 'neck', '颈部', 'neck'),
-      sub('body', 'skin', '皮肤', 'skin'),
-      sub('body', 'skincolor', '肤色', 'skincolor'),
-      sub('body', 'tail', '尾巴', 'tail'),
-      sub('body', 'wings', '翅膀', 'wings'),
-      sub('body', 'injury', '受伤', 'injury'),
-      sub('body', 'on', '位置关系', 'on'),
-      sub('body', 'posture', '身体姿势', 'posture'),
-      // 表情、视线与动作
-      sub('expression', 'expression_eyes', '表情眼睛', 'eyes'),
-      sub('expression', 'facial_detail', '面部细节', 'facial_detail'),
-      sub('expression', 'facial_expression', '面部表情', 'facial_expression'),
-      sub('expression', 'gaze_expression', '表情视线', 'gaze'),
-      sub('gaze', 'gaze_direction', '视线方向', 'gaze'),
-      sub('pose', 'action', '动作', 'action'),
-      sub('pose', 'gesture', '手势', 'gesture'),
-      sub('pose', 'pose_or_action', '姿势与动作', 'pose_or_action'),
-      sub('pose', 'sexualized_pose', '性化姿势', 'sexualized_pose', true),
-      sub('body', 'ass', '臀部', 'ass', true),
-      sub('body', 'pussy', '阴部', 'pussy', true),
-      sub('body', 'penis', '阴茎', 'penis', true),
-      // 角色、动物、植物
-      sub('character', 'character_type', '角色类型', 'character_type'),
-      sub('character', 'gender', '性别', 'gender'),
-      sub('character', 'role_or_type', '角色/职业', 'role_or_type'),
-      sub('character', 'species_or_archetype', '物种与原型', 'species_or_archetype'),
-      sub('character', 'relationship', '角色关系', 'relationship'),
-      sub('character', 'group_size', '角色数量', 'group_size'),
-      sub('creatures', 'animals', '动物', 'animals'),
-      sub('creatures', 'birds', '鸟类', 'birds'),
-      sub('creatures', 'cats', '猫', 'cats'),
-      sub('creatures', 'dogs', '狗', 'dogs'),
-      sub('creatures', 'legendary', '传奇生物', 'legendary'),
-      sub('plants', 'plant', '植物', 'plant'),
-      sub('plants', 'tree', '树', 'tree'),
-      sub('plants', 'flowers', '花卉', 'flowers'),
-      // 服装
-      sub('apparel', 'attire', '服装', 'attire'),
-      sub('apparel', 'clothing', '服装单品', 'clothing'),
-      sub('apparel', 'clothing_style', '服装风格', 'clothing_style'),
-      sub('apparel', 'dress', '裙装', 'dress'),
-      sub('apparel', 'sleeves', '袖子', 'sleeves'),
-      sub('apparel', 'legwear', '腿部服装', 'legwear'),
-      sub('apparel', 'footwear', '鞋类', 'footwear'),
-      sub('apparel', 'headwear', '头饰/帽子', 'headwear'),
-      sub('apparel', 'mask', '面具', 'mask'),
-      sub('apparel', 'bra', '胸罩', 'bra'),
-      sub('apparel', 'panties', '内裤', 'panties'),
-      sub('apparel', 'swimsuit', '泳装', 'swimsuit'),
-      sub('apparel', 'underwear_or_swimwear', '内衣与泳装', 'underwear_or_swimwear'),
-      sub('apparel', 'sexualattire', '性感服装', 'sexualattire', true),
-      sub('apparel', 'nudity', '裸露', 'nudity', true),
-      sub('apparel', 'exposure', '服装裸露', 'exposure', true),
-      // 物体与成人主题
-      sub('objects', 'airplanes', '飞机', 'airplanes'),
-      sub('objects', 'armor', '盔甲', 'armor'),
-      sub('objects', 'vehicles', '车辆', 'vehicles'),
-      sub('objects', 'helicopters', '直升机', 'helicopters'),
-      sub('objects', 'ships', '船舶', 'ships'),
-      sub('objects', 'weapons', '武器', 'weapons'),
-      sub('objects', 'sexobjects', '性相关物品', 'sexobjects', true),
-      sub('objects_background', 'object', '场景物体', 'object'),
-      sub('realword', 'companies', '公司/品牌', 'companies'),
-      sub('realword', 'jobs', '工作/职业', 'jobs'),
-      // NSFW 内容集中归入主体末尾，开启 NSFW 后可见
-      sub('sex', 'adult_theme', '成人主题', 'adult_theme', true),
-      sub('sex', 'anatomy', '性解剖', 'anatomy', true),
-      sub('sex', 'sexacts', '性行为（旧词库）', 'sexacts', true),
-      sub('sex', 'sexualacts', '性行为', 'sexualacts', true),
-      sub('sex', 'sexualpositions', '性爱姿势', 'sexualpositions', true),
-      sub('sex', 'simulatedsexacts', '模拟性行为', 'simulatedsexacts', true),
-      sub('sex', 'bdsm', '虐恋与束缚', 'bdsm', true),
-      sub('sex', 'bondage', '束缚', 'bondage', true),
-      sub('sex', 'fetish_or_scenario', '恋物与成人场景', 'fetish_or_scenario', true),
-      sub('sex', 'sex_toys', '性玩具', 'sex_toys', true),
-      sub('sex', 'bodily_fluids', '体液', 'bodily_fluids', true),
+      group('person', '人物与身体', files(
+        'body/bodyparts', 'body/appearance', 'body/body_features', 'body/breasts',
+        'body/face', 'body/facial_features', 'body/ears', 'body/eyes', 'body/eyebrows',
+        'body/nose', 'body/shoulders', 'body/neck', 'body/skin', 'body/skincolor',
+        'body/tail', 'body/wings', 'body/injury'
+      )),
+      group('hair', '头发与发型', files('body/hair', 'body/haircolor', 'body/hairstyles')),
+      group('expression', '表情与视线', files(
+        'expression/eyes', 'expression/facial_detail', 'expression/facial_expression',
+        'expression/gaze', 'gaze/gaze'
+      )),
+      group('pose', '动作与姿态', files(
+        'body/hand', 'body/feet', 'body/gestures', 'body/on', 'body/posture',
+        'pose/action', 'pose/gesture', 'pose/pose_or_action'
+      )),
+      group('characters', '角色、动物与植物', files(
+        'character/character_type', 'character/gender', 'character/role_or_type',
+        'character/species_or_archetype', 'character/relationship', 'character/group_size',
+        'creatures/animals', 'creatures/birds', 'creatures/cats', 'creatures/dogs',
+        'creatures/legendary', 'plants/plant', 'plants/tree', 'plants/flowers',
+        'realword/companies', 'realword/jobs'
+      )),
+      group('clothing', '服装', files(
+        'apparel/attire', 'apparel/clothing', 'apparel/clothing_style', 'apparel/dress',
+        'apparel/sleeves', 'apparel/legwear', 'apparel/footwear', 'apparel/headwear',
+        'apparel/mask', 'apparel/bra', 'apparel/panties', 'apparel/swimsuit',
+        'apparel/underwear_or_swimwear'
+      )),
+      group('adult_clothing', '裸露与性感服装', files(
+        'apparel/sexualattire', 'apparel/nudity', 'apparel/exposure'
+      ), true),
+      group('objects', '物体与道具', files(
+        'objects/airplanes', 'objects/armor', 'objects/vehicles', 'objects/helicopters',
+        'objects/ships', 'objects/weapons', 'objects/sexobjects', 'objects_background/object'
+      )),
+      group('adult', 'NSFW 成人内容', files(
+        'body/ass', 'body/pussy', 'body/penis', 'pose/sexualized_pose',
+        'sex/adult_theme', 'sex/anatomy', 'sex/sexacts', 'sex/sexualacts',
+        'sex/sexualpositions', 'sex/simulatedsexacts', 'sex/bdsm', 'sex/bondage',
+        'sex/fetish_or_scenario', 'sex/sex_toys', 'sex/bodily_fluids'
+      ), true),
     ],
   },
   {
@@ -119,14 +79,14 @@ export const mainCategoryConfigs: MainCategoryConfig[] = [
     icon: '🏞️',
     nsfw: false,
     subCategories: [
-      sub('composition', 'backgrounds', '背景', 'backgrounds'),
-      sub('scene', 'details', '场景细节', 'details'),
-      sub('scene', 'setting', '场景设置', 'setting'),
-      sub('scene', 'sky', '天空', 'sky'),
-      sub('objects_background', 'occasion', '场合', 'occasion'),
-      sub('objects_background', 'setting', '环境设置', 'setting'),
-      sub('realword', 'locations', '地点', 'locations'),
-      sub('realword', 'holidays', '节日', 'holidays'),
+      group('background', '背景与环境', files(
+        'composition/backgrounds', 'image_attributes/background', 'scene/details',
+        'scene/setting', 'objects_background/setting'
+      )),
+      group('location', '地点与场合', files(
+        'realword/locations', 'realword/holidays', 'objects_background/occasion'
+      )),
+      group('sky', '天空与自然', files('scene/sky')),
     ],
   },
   {
@@ -135,23 +95,19 @@ export const mainCategoryConfigs: MainCategoryConfig[] = [
     icon: '🎨',
     nsfw: false,
     subCategories: [
-      sub('image_attributes', 'anime', '动漫', 'anime'),
-      sub('image_attributes', 'illustration', '插画', 'illustration'),
-      sub('image_attributes', 'photorealistic', '写实', 'photorealistic'),
-      sub('image_attributes', 'sketch', '素描', 'sketch'),
-      sub('image_attributes', 'format_or_style', '格式与风格', 'format_or_style'),
-      sub('image_attributes', 'genre', '流派', 'genre'),
-      sub('image_attributes', 'origin', '来源/地域', 'origin'),
-      sub('image_attributes', 'publication_format', '出版格式', 'publication_format'),
-      sub('image_attributes', 'pattern', '图案', 'pattern'),
-      sub('composition', 'atisticlicense', '艺术许可', 'atisticlicense'),
-      sub('composition', 'fineartparody', '美术模仿', 'fineartparody'),
-      sub('composition', 'patterns', '图案', 'patterns'),
-      sub('composition', 'symbols', '符号', 'symbols'),
-      sub('composition', 'text', '文本', 'text'),
-      sub('composition', 'japanesedialects', '日语方言', 'japanesedialects'),
-      sub('composition', 'yeartags', '年份标签', 'yeartags'),
-      sub('apparel', 'fashionstyle', '时尚风格', 'fashionstyle'),
+      group('rendering', '画面类型', files(
+        'image_attributes/anime', 'image_attributes/illustration',
+        'image_attributes/photorealistic', 'image_attributes/sketch',
+        'image_attributes/format_or_style', 'image_attributes/publication_format'
+      )),
+      group('art_direction', '艺术方向', files(
+        'image_attributes/genre', 'image_attributes/origin', 'composition/atisticlicense',
+        'composition/fineartparody', 'apparel/fashionstyle'
+      )),
+      group('graphic', '图案、符号与文字', files(
+        'image_attributes/pattern', 'composition/patterns', 'composition/symbols',
+        'composition/text', 'composition/japanesedialects', 'composition/yeartags'
+      )),
     ],
   },
   {
@@ -160,15 +116,15 @@ export const mainCategoryConfigs: MainCategoryConfig[] = [
     icon: '🎥',
     nsfw: false,
     subCategories: [
-      sub('composition', 'imagecomposition', '图像构成', 'imagecomposition'),
-      sub('composition', 'charactercount', '角色数量构图', 'charactercount'),
-      sub('composition', 'camera', '相机', 'camera'),
-      sub('composition', 'angle', '角度', 'angle'),
-      sub('composition', 'distance', '景别', 'distance'),
-      sub('composition', 'framing', '构图', 'framing'),
-      sub('composition', 'viewpoint', '视角', 'viewpoint'),
-      sub('image_attributes', 'framing', '构图属性', 'framing'),
-      sub('image_attributes', 'viewpoint', '视角属性', 'viewpoint'),
+      group('composition', '构图与画面结构', files(
+        'composition/imagecomposition', 'composition/charactercount', 'composition/framing',
+        'image_attributes/framing'
+      )),
+      group('view', '视角与景别', files(
+        'composition/viewpoint', 'image_attributes/viewpoint', 'composition/distance',
+        'composition/angle'
+      )),
+      group('camera', '相机与镜头', files('composition/camera')),
     ],
   },
   {
@@ -177,14 +133,14 @@ export const mainCategoryConfigs: MainCategoryConfig[] = [
     icon: '🌙',
     nsfw: false,
     subCategories: [
-      sub('composition', 'colors', '颜色', 'colors'),
-      sub('image_attributes', 'illumination', '光照属性', 'illumination'),
-      sub('image_attributes', 'time_of_day', '时间属性', 'time_of_day'),
-      sub('image_attributes', 'theme', '主题氛围', 'theme'),
-      sub('lighting', 'cinematic', '电影感光效', 'cinematic'),
-      sub('lighting', 'dynamic', '动态光效', 'dynamic'),
-      sub('lighting', 'illumination', '光照', 'illumination'),
-      sub('lighting', 'time_of_day', '时间', 'time_of_day'),
+      group('color_light', '颜色与光照', files(
+        'composition/colors', 'image_attributes/illumination', 'lighting/illumination',
+        'lighting/cinematic', 'lighting/dynamic'
+      )),
+      group('time_theme', '时间与主题氛围', files(
+        'image_attributes/time_of_day', 'lighting/time_of_day', 'image_attributes/theme'
+      )),
+      group('effects', '视觉效果', files('image_attributes/visual_effect')),
     ],
   },
   {
@@ -193,32 +149,21 @@ export const mainCategoryConfigs: MainCategoryConfig[] = [
     icon: '✨',
     nsfw: false,
     subCategories: [
-      sub('apparel', 'accessories', '配饰', 'accessories'),
-      sub('apparel', 'handwear', '手部穿戴', 'handwear'),
-      sub('apparel', 'neckwear', '颈部饰品', 'neckwear'),
-      sub('apparel', 'embellishment', '装饰', 'embellishment'),
-      sub('apparel', 'eyewear', '眼镜', 'eyewear'),
-      sub('apparel', 'makeup', '化妆', 'makeup'),
-      sub('apparel', 'covering', '遮挡', 'covering'),
-      sub('objects', 'audio', '音频', 'audio'),
-      sub('objects', 'cards', '卡片', 'cards'),
-      sub('objects', 'playingcard', '扑克牌', 'playingcard'),
-      sub('objects', 'doors', '门', 'doors'),
-      sub('objects', 'eyewear', '物体眼镜', 'eyewear'),
-      sub('objects', 'piercings', '穿孔', 'piercings'),
-      sub('composition', 'censorship', '审查/遮挡', 'censorship'),
-      sub('image_attributes', 'background', '背景属性', 'background'),
-      sub('image_attributes', 'character_group', '角色集合', 'character_group'),
-      sub('image_attributes', 'expression_sheet', '表情表', 'expression_sheet'),
-      sub('image_attributes', 'file_properties', '文件属性', 'file_properties'),
-      sub('image_attributes', 'language', '语言', 'language'),
-      sub('image_attributes', 'layout', '版式', 'layout'),
-      sub('image_attributes', 'merchandise', '周边商品', 'merchandise'),
-      sub('image_attributes', 'metadata', '元数据', 'metadata'),
-      sub('image_attributes', 'resolution', '分辨率', 'resolution'),
-      sub('image_attributes', 'search_preset', '搜索预设', 'search_preset', true),
-      sub('image_attributes', 'setting', '图像设置属性', 'setting'),
-      sub('image_attributes', 'visual_effect', '视觉效果', 'visual_effect'),
+      group('accessories', '配饰与穿戴细节', files(
+        'apparel/accessories', 'apparel/handwear', 'apparel/neckwear',
+        'apparel/embellishment', 'apparel/eyewear', 'apparel/makeup', 'apparel/covering'
+      )),
+      group('small_objects', '小物件与装饰物', files(
+        'objects/audio', 'objects/cards', 'objects/playingcard', 'objects/doors',
+        'objects/eyewear', 'objects/piercings', 'composition/censorship'
+      )),
+      group('technical', '画面属性与技术参数', files(
+        'image_attributes/character_group', 'image_attributes/expression_sheet',
+        'image_attributes/file_properties', 'image_attributes/language', 'image_attributes/layout',
+        'image_attributes/merchandise', 'image_attributes/metadata', 'image_attributes/resolution',
+        'image_attributes/setting'
+      )),
+      group('search', '搜索与预设', files('image_attributes/search_preset'), true),
     ],
   },
 ];

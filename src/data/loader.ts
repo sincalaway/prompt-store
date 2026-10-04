@@ -13,21 +13,26 @@ const getSubConfig = (category: string, subCategory: string) => {
 // 加载指定公式分类下的提示词数据；sourceCategory 用于兼容原有 data 目录
 export async function loadPromptItems(category: string, subCategory: string): Promise<PromptItem[]> {
   const subConfig = getSubConfig(category, subCategory);
-  const sourceCategory = subConfig?.sourceCategory || category;
-  const fileName = subConfig?.fileName || subCategory;
-  const cacheKey = `${sourceCategory}/${fileName}`;
+  const sourceFiles = subConfig?.sourceFiles || [{
+    sourceCategory: subConfig?.sourceCategory || category,
+    fileName: subConfig?.fileName || subCategory,
+  }];
+  const cacheKey = `${category}/${subCategory}`;
 
   if (promptDataCache[cacheKey]) {
     return promptDataCache[cacheKey];
   }
 
   try {
-    const module = await import(`./${sourceCategory}/${fileName}.ts`);
-    const items = module.items || [];
+    const modules = await Promise.all(sourceFiles.map(async ({ sourceCategory, fileName }) => {
+      const module = await import(`./${sourceCategory}/${fileName}.ts`);
+      return module.items || [];
+    }));
+    const items = modules.flat();
     promptDataCache[cacheKey] = items;
     return items;
   } catch (error) {
-    console.error(`加载提示词失败：${sourceCategory}/${fileName}`, error);
+    console.error(`加载提示词失败：${category}/${subCategory}`, error);
     return [];
   }
 }
