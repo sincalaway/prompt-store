@@ -8,6 +8,17 @@
           <h1>Prompt Store</h1>
         </div>
       </div>
+      <div class="header-content-heading content-heading">
+        <div>
+          <p class="section-kicker">CREATIVE LIBRARY</p>
+          <h2>组合你的灵感提示词</h2>
+          <p class="content-subtitle">选择标签，调整权重，快速复制到你的绘图工作流。</p>
+        </div>
+        <div class="mini-stats">
+          <div class="mini-stat"><span class="mini-stat-value">{{ store.totalCount }}</span><span>已选</span></div>
+          <div class="mini-stat accent"><span class="mini-stat-value">{{ store.showNSFW ? 'ALL' : 'SFW' }}</span><span>内容模式</span></div>
+        </div>
+      </div>
       <div class="header-meta">
         <span class="header-status"><span class="status-dot"></span> 本地工作区</span>
         <span class="header-divider"></span>
@@ -25,17 +36,6 @@
       </aside>
 
       <main class="main-content">
-        <div class="content-heading">
-          <div>
-            <p class="section-kicker">CREATIVE LIBRARY</p>
-            <h2>组合你的灵感提示词</h2>
-            <p class="content-subtitle">选择标签，调整权重，快速复制到你的绘图工作流。</p>
-          </div>
-          <div class="mini-stats">
-            <div class="mini-stat"><span class="mini-stat-value">{{ store.totalCount }}</span><span>已选</span></div>
-            <div class="mini-stat accent"><span class="mini-stat-value">{{ store.showNSFW ? 'ALL' : 'SFW' }}</span><span>内容模式</span></div>
-          </div>
-        </div>
         <section class="formula-guide" aria-labelledby="formula-title">
           <div class="formula-guide-head">
             <div>
