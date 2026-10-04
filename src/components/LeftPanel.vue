@@ -19,7 +19,7 @@
 
     <div class="footer-section">
       <div class="footer-hint">
-        <span>👆 点击主按钮</span>
+        <span>👆 按公式模块浏览</span>
       </div>
 
       <!-- GitHub 链接 - SVG 图标 + 文字 -->

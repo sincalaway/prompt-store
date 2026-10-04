@@ -57,17 +57,20 @@ export const usePromptStore = defineStore('prompt', () => {
   const loadCurrentMainCategory = (): string => {
     try {
       const stored = localStorage.getItem(STORAGE_KEYS.CURRENT_MAIN_CATEGORY);
-      if (!stored) return 'picture';
+      if (!stored) return 'subject';
       
       const data = JSON.parse(stored);
       if (data.expiry && Date.now() > data.expiry) {
         localStorage.removeItem(STORAGE_KEYS.CURRENT_MAIN_CATEGORY);
-        return 'picture';
+        return 'subject';
       }
-      return data.value || 'picture';
+      const savedCategory = data.value || 'subject';
+      return mainCategoryConfigs.some((category) => category.id === savedCategory)
+        ? savedCategory
+        : 'subject';
     } catch (error) {
       console.error('读取当前主分类失败:', error);
-      return 'picture';
+      return 'subject';
     }
   };
 

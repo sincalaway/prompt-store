@@ -15,6 +15,7 @@ export interface SubCategoryConfig {
   key: string;
   label: string;
   fileName: string;
+  sourceCategory?: string;
   nsfw?: boolean;
   count?: number;
 }

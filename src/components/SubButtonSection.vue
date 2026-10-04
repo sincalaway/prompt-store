@@ -76,7 +76,7 @@
               没有找到匹配的"{{ store.searchQuery }}"
             </template>
             <template v-else-if="!store.showNSFW && hasHiddenNSFWItems">
-              当前分类下所有内容均为 NSFW
+              当前公式分类下所有内容均为 NSFW
             </template>
             <template v-else> 没有找到匹配的结果 </template>
           </span>
