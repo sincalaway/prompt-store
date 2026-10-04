@@ -69,8 +69,6 @@ export const items: PromptItem[] = [
   { chinese: "泡泡短袖", english: "puffy short sleeves" },
   { chinese: "插肩袖", english: "raglan sleeves" },
   { chinese: "拇指洞袖", english: "thumb hole sleeves" },
-  { chinese: "破洞袖", english: "torn sleeves" },
-  { chinese: "宽袖", english: "wide sleeves" },
 
   // Actions（动作/姿态）
   { chinese: "手臂伸出袖外", english: "arm out of sleeve" },
@@ -81,14 +79,11 @@ export const items: PromptItem[] = [
 
   // Sleeveless clothing（无袖衣物）
   { chinese: "无袖服装", english: "sleeveless clothing" },
-  { chinese: "无袖衬衫", english: "sleeveless shirt" },
-  { chinese: "无袖连衣裙", english: "sleeveless dress" },
   { chinese: "无袖长风衣", english: "sleeveless duster" },
   { chinese: "无袖连帽衫", english: "sleeveless hoodie" },
   { chinese: "无袖夹克", english: "sleeveless jacket" },
   { chinese: "无袖和服", english: "sleeveless kimono" },
   { chinese: "无袖毛衣", english: "sleeveless sweater" },
-  { chinese: "无袖高领衫", english: "sleeveless turtleneck" },
   { chinese: "背心", english: "vest" },
   { chinese: "马甲", english: "waistcoat" },
 
@@ -100,7 +95,6 @@ export const items: PromptItem[] = [
   { chinese: "有袖紧身衣", english: "sleeved leotard" },
 
   // Short sleeves（短袖类别）
-  { chinese: "短袖", english: "short sleeves" },
   { chinese: "短袖外套", english: "short-sleeved coat" },
   { chinese: "短袖夹克", english: "short-sleeved jacket" },
   { chinese: "短袖毛衣", english: "short-sleeved sweater" },

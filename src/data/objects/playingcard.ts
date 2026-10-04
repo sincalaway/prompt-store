@@ -15,7 +15,6 @@ export const items: PromptItem[] = [
   { chinese: "J", english: "jack" },
   { chinese: "JOKER", english: "joker" },
   // 梅花
-  { chinese: "梅花", english: "clubs" },
   { chinese: "梅花A", english: "ace of clubs" },
   { chinese: "梅花K", english: "king of clubs" },
   { chinese: "梅花Q", english: "queen of clubs" },
@@ -30,7 +29,6 @@ export const items: PromptItem[] = [
   { chinese: "梅花3", english: "three of clubs" },
   { chinese: "梅花2", english: "two of clubs" },
   // 方块
-  { chinese: "方块", english: "diamonds" },
   { chinese: "方块A", english: "ace of diamonds" },
   { chinese: "方块K", english: "king of diamonds" },
   { chinese: "方块Q", english: "queen of diamonds" },
@@ -60,7 +58,6 @@ export const items: PromptItem[] = [
   { chinese: "红心3", english: "three of hearts" },
   { chinese: "红心2", english: "two of hearts" },
   // 黑桃
-  { chinese: "黑桃", english: "spades" },
   { chinese: "黑桃A", english: "ace of spades" },
   { chinese: "黑桃K", english: "king of spades" },
   { chinese: "黑桃Q", english: "queen of spades" },

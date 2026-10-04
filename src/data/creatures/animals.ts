@@ -72,7 +72,6 @@ export const items: PromptItem[] = [
   { chinese: "隐鳃鲵", english: "hellbender" },
 
   // Aquatic life / 水生动物
-  { chinese: "鱼类", english: "fish" },
   { chinese: "雀鳝", english: "alligator gar" },
   { chinese: "神仙鱼", english: "angelfish" },
   { chinese: "𩽾𩾌鱼", english: "anglerfish" },

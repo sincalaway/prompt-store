@@ -48,9 +48,7 @@ export const items: PromptItem[] = [
   // 耳朵相关物品
   { chinese: "耳洞", english: "ear piercing" },
   { chinese: "护耳", english: "ear protection" },
-  { chinese: "耳环", english: "earrings" },
   { chinese: "单只耳饰", english: "single earring" },
-  { chinese: "头戴式耳机", english: "headphones" },
   { chinese: "耳后夹物", english: "object behind ear" },
   
   // 杂项

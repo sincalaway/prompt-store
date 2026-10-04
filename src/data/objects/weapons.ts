@@ -4,13 +4,11 @@ export const items: PromptItem[] = [
   // 防空炮
   { chinese: "火炮", english: "artillery" },
   { chinese: "防空炮", english: "anti-aircraft gun" },
-  { chinese: "88毫米高射炮", english: "88 flak" },
   { chinese: "博福斯40毫米高射炮", english: "bofors 40 mm gun" },
   { chinese: "厄利孔20毫米高射炮", english: "oerlikon 20mm gun" },
   { chinese: "九六式二十五毫米高射炮", english: "type 96 aa gun" },
   { chinese: "九九年式机炮", english: "type 99 cannon" },
   { chinese: "炮弹", english: "artillery shell" },
-  { chinese: "舰炮炮塔", english: "ship turret" },
   // 炸弹
   { chinese: "炸弹", english: "bomb" },
   { chinese: "航空炸弹", english: "aerial bomb" },
@@ -40,10 +38,8 @@ export const items: PromptItem[] = [
   { chinese: "铝热剂手榴弹", english: "thermite grenade" },
   // 地雷
   { chinese: "地雷", english: "mine" },
-  { chinese: "反坦克地雷", english: "anti-tank mine" },
   { chinese: "刺雷", english: "lunge mine" },
   { chinese: "M18阔刀地雷", english: "m18 claymore" },
-  { chinese: "水雷", english: "naval mine" },
   // 迫击炮
   { chinese: "迫击炮", english: "mortar" },
   { chinese: "2B14波德诺斯迫击炮", english: "2b14 podnos 5" },
@@ -51,7 +47,6 @@ export const items: PromptItem[] = [
   { chinese: "插塞式迫击炮", english: "spigot mortar" },
   // 发射器与导弹武器
   { chinese: "九头蛇70航空火箭弹", english: "hydra 70" },
-  { chinese: "导弹", english: "missile" },
   // 榴弹发射器
   { chinese: "榴弹发射器", english: "grenade launcher" },
   { chinese: "AGS-30自动榴弹发射器", english: "ags-30" },
@@ -81,7 +76,6 @@ export const items: PromptItem[] = [
   { chinese: "M40无后坐力炮", english: "m40 recoilless rifle" },
   { chinese: "M72 LAW轻型反坦克武器", english: "m72 law" },
   { chinese: "MIM-104爱国者防空导弹", english: "mim-104 patriot" },
-  { chinese: "铁拳反坦克火箭筒", english: "panzerfaust" },
   { chinese: "铁拳3反坦克火箭筒", english: "panzerfaust 3" },
   { chinese: "坦克杀手反坦克火箭筒", english: "panzerschreck" },
   { chinese: "RPG火箭推进榴弹", english: "rpg" },
@@ -108,7 +102,6 @@ export const items: PromptItem[] = [
   // 手枪
   { chinese: "手枪", english: "handgun" },
   // 左轮手枪
-  { chinese: "左轮手枪", english: "revolver" },
   { chinese: "基亚帕犀牛式左轮手枪", english: "chiappa rhino" },
   { chinese: "柯尔特1851海军型左轮手枪", english: "colt 1851 navy" },
   { chinese: "柯尔特1860陆军型左轮手枪", english: "colt 1860 army" },
@@ -281,7 +274,6 @@ export const items: PromptItem[] = [
   // 步枪
   { chinese: "步枪", english: "rifle" },
   // 反器材步枪
-  { chinese: "反器材步枪", english: "anti-materiel rifle" },
   { chinese: "精密国际AW-50步枪", english: "ai aw-50" },
   { chinese: "精密国际AX50步枪", english: "ai ax50" },
   { chinese: "AR-50步枪", english: "ar-50" },
@@ -465,7 +457,6 @@ export const items: PromptItem[] = [
   { chinese: "SR-25半自动狙击步枪", english: "sr-25" },
   { chinese: "SV-98狙击步枪", english: "sv-98" },
   { chinese: "VSS微声狙击步枪", english: "vss vintorez" },
-  { chinese: "VKS/VSSK微声狙击步枪", english: "vychlop vks/vssk" },
   { chinese: "瓦尔特WA 2000狙击步枪", english: "walther wa 2000" },
   { chinese: "XM2010增强型狙击步枪", english: "xm2010 enhanced sniper rifle (esr)" },
   // 霰弹枪
@@ -637,7 +628,6 @@ export const items: PromptItem[] = [
   { chinese: "剑", english: "sword" },
   { chinese: "剑杖", english: "sword cane" },
   { chinese: "水手刀", english: "cutlass" },
-  { chinese: "刀", english: "dao" },
   { chinese: "大剑", english: "greatsword" },
   { chinese: "苏格兰阔刃大剑", english: "claymore (sword)" },
   { chinese: "德国双手剑", english: "zweihander" },
@@ -665,13 +655,11 @@ export const items: PromptItem[] = [
   { chinese: "忍者刀", english: "ninjatou" },
   { chinese: "短刀", english: "tantou" },
   { chinese: "反曲刀", english: "shotel" },
-  { chinese: "镰刀", english: "sickle" },
   { chinese: "软剑", english: "whip sword" },
   { chinese: "水晶剑", english: "crystal sword" },
   { chinese: "能量剑", english: "energy sword" },
   { chinese: "光剑", english: "lightsaber" },
   { chinese: "光剑杖", english: "saberstaff" },
-  { chinese: "能量剑", english: "energy sword" },
   { chinese: "风火轮", english: "windfire wheel" },
   { chinese: "三节棍", english: "three section staff" },
   // 训练武器
@@ -819,13 +807,11 @@ export const items: PromptItem[] = [
   { chinese: "无限手套", english: "infinity gauntlet" },
   { chinese: "洞察法杖", english: "insight staff" },
   { chinese: "不可视之剑", english: "invisible air" },
-  { chinese: "胡狼", english: "jackal" },
   { chinese: "干将莫邪", english: "kanshou & bakuya" },
   { chinese: "克雷贝尔狙击枪", english: "kraber" },
   { chinese: "L-STAR轻机枪", english: "l-star" },
   { chinese: "雷瓦汀", english: "laevatein" },
   { chinese: "朗基努斯之枪", english: "lance of longinus" },
-  { chinese: "雷瓦汀", english: "laevatein" },
   { chinese: "爱情吉他棒", english: "love guitar rod" },
   { chinese: "爱爱棒", english: "love love stick" },
   { chinese: "幸运与胆识", english: "luck and pluck" },
@@ -882,7 +868,6 @@ export const items: PromptItem[] = [
   { chinese: "波塞冬大炮", english: "poseidon cannon" },
   { chinese: "掠食者加农炮", english: "predator cannon" },
   { chinese: "徘徊者冲锋枪", english: "prowler smg" },
-  { chinese: "念动炮", english: "psychogun" },
   { chinese: "R-101C卡宾枪", english: "r-101c carbine" },
   { chinese: "R-201 SOAR步枪", english: "r-201 soar" },
   { chinese: "R-301卡宾枪", english: "r-301 carbine" },
@@ -974,7 +959,6 @@ export const items: PromptItem[] = [
   { chinese: "胸挂", english: "chest rig" },
   { chinese: "携行装备", english: "load bearing equipment" },
   { chinese: "携行背心", english: "load bearing vest" },
-  { chinese: "子弹带", english: "bandolier" },
   { chinese: "枪管", english: "barrel" },
   { chinese: "枪管护罩", english: "barrel shroud" },
   { chinese: "两脚架", english: "bipod" },
@@ -1019,9 +1003,7 @@ export const items: PromptItem[] = [
   { chinese: "上膛", english: "cocking gun" },
   { chinese: "双持", english: "dual wielding" },
   { chinese: "开火", english: "firing" },
-  { chinese: "透过瞄准镜观察", english: "looking through scope" },
   { chinese: "弹匣弹出", english: "magazine ejection" },
-  { chinese: "瞄准", english: "aiming" },
   { chinese: "准备出枪", english: "ready to draw" },
   { chinese: "装弹", english: "reloading" },
   { chinese: "扳机指", english: "trigger discipline" },
@@ -1052,7 +1034,6 @@ export const items: PromptItem[] = [
   { chinese: "枪管特写序列", english: "gun barrel sequence" },
   { chinese: "射击场", english: "shooting range" },
   { chinese: "打靶练习", english: "target practice" },
-  { chinese: "武器焦点", english: "weapon focus" },
   { chinese: "武器名称", english: "weapon name" },
   { chinese: "武器架", english: "weapon rack" },
 ];

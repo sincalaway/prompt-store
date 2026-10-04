@@ -197,7 +197,6 @@ export const items: PromptItem[] = [
   { chinese: "林鸱", english: "potoo" },
   { chinese: "海鹦鹉", english: "puffin" },
   { chinese: "鹑", english: "quail" },
-  { chinese: "棕三趾鹑", english: "barred buttonquail" },
   { chinese: "日本鹌鹑", english: "japanese quail" },
   { chinese: "红胁蓝尾鸲", english: "red-flanked bluetail" },
   { chinese: "红尾鸲", english: "redstarts" },

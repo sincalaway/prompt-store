@@ -48,7 +48,6 @@ export const items: PromptItem[] = [
   { chinese: "福特汽车", english: "ford" },
   { chinese: "霍顿汽车", english: "holden" },
   { chinese: "本田汽车", english: "honda" },
-  { chinese: "悍马越野车", english: "hummer" },
   { chinese: "印第安摩托车", english: "indian" },
   { chinese: "五十铃汽车", english: "isuzu motors" },
   { chinese: "捷豹汽车", english: "jaguar" },
@@ -57,7 +56,6 @@ export const items: PromptItem[] = [
   { chinese: "兰博基尼跑车", english: "lamborghini" },
   { chinese: "拉达汽车", english: "lada (car)" },
   { chinese: "蓝旗亚汽车", english: "lancia (brand)" },
-  { chinese: "路虎越野车", english: "land rover" },
   { chinese: "路特斯跑车", english: "lotus" },
   { chinese: "玛莎拉蒂汽车", english: "maserati" },
   { chinese: "马自达汽车", english: "mazda" },
@@ -367,7 +365,6 @@ export const items: PromptItem[] = [
   // 货运快递
   { chinese: "CSX 运输公司", english: "csx corporation" },
   { chinese: "DHL快递", english: "dhl" },
-  { chinese: "联邦快递", english: "fedex" },
   { chinese: "佐川急便快递", english: "sagawa express" },
   { chinese: "UPS快递", english: "united parcel service" },
   { chinese: "USPS邮政", english: "united states postal service" },

@@ -2,23 +2,11 @@ import type { PromptItem } from '../../types';
 
 export const items: PromptItem[] = [
   // Parts (身体部位)
-  { chinese: "阴茎", english: "penis", nsfw: true },
-  { chinese: "包皮", english: "foreskin", nsfw: true },
-  { chinese: "包茎", english: "phimosis", nsfw: true },
-  { chinese: "睾丸", english: "testicles", nsfw: true },
   { chinese: "海绵体", english: "corpus spongiosum", nsfw: true },
 
   // Appearance (外观)
-  { chinese: "动物阴茎", english: "animal penis", nsfw: true },
-  { chinese: "狗阴茎", english: "dog penis", nsfw: true },
-  { chinese: "海豚阴茎", english: "dolphin penis", nsfw: true },
-  { chinese: "马阴茎", english: "horse penis", nsfw: true },
-  { chinese: "猪阴茎", english: "pig penis", nsfw: true },
-  { chinese: "蛇阴茎", english: "snake penis", nsfw: true },
   { chinese: "鸭阴茎", english: "duck penis", nsfw: true },
   { chinese: "深色阴茎", english: "dark penis", nsfw: true },
-  { chinese: "勃起", english: "erection", nsfw: true },
-  { chinese: "疲软", english: "flaccid", nsfw: true },
   { chinese: "半勃起", english: "half-erect", nsfw: true },
   { chinese: "粗壮的阴茎", english: "girthy penis", nsfw: true },
   { chinese: "发光的阴茎", english: "glowing penis", nsfw: true },
@@ -26,12 +14,7 @@ export const items: PromptItem[] = [
   { chinese: "阴茎上的痣", english: "mole on penis", nsfw: true },
   { chinese: "阴茎穿刺", english: "penis piercing", nsfw: true },
   { chinese: "触手状阴茎", english: "penis tentacle", nsfw: true },
-  { chinese: "小阴茎", english: "small penis", nsfw: true },
-  { chinese: "大阴茎", english: "large penis", nsfw: true },
-  { chinese: "巨大阴茎", english: "huge penis", nsfw: true },
-  { chinese: "巨型阴茎", english: "gigantic penis", nsfw: true },
   { chinese: "带刺的阴茎", english: "spiked penis", nsfw: true },
-  { chinese: "青筋暴起的阴茎", english: "veiny penis", nsfw: true },
   { chinese: "包皮环切疤痕", english: "circumcision scar", nsfw: true },
 
   // Actions (动作/行为)
@@ -67,11 +50,9 @@ export const items: PromptItem[] = [
   { chinese: "手持切断的阴茎", english: "holding severed penis", nsfw: true },
 
   // Clothes (衣物)
-  { chinese: "凸起", english: "bulge", nsfw: true },
   { chinese: "凸起互相触碰", english: "bulges touching", nsfw: true },
   { chinese: "被遮盖的阴茎", english: "covered penis", nsfw: true },
   { chinese: "阴茎和凸起触碰", english: "penis and bulge touching", nsfw: true },
-  { chinese: "阴茎在内裤里", english: "penis in panties", nsfw: true },
   { chinese: "阴茎在连裤袜里", english: "penis in pantyhose", nsfw: true },
   { chinese: "阴茎在泳衣里", english: "penis in swimsuit", nsfw: true },
   { chinese: "阴茎在自己的大腿袜里", english: "penis in own thighhigh", nsfw: true },

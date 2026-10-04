@@ -57,7 +57,6 @@ export const items: PromptItem[] = [
   { chinese: "前开襟", english: "center opening", nsfw: true },
   { chinese: "大衣敞开", english: "coat, open", nsfw: true },
   { chinese: "开领", english: "open collar", nsfw: true },
-  { chinese: "连衣裙拉扯", english: "dress pull", nsfw: true },
   { chinese: "卫衣敞开", english: "hoodie, open", nsfw: true },
   { chinese: "夹克敞开", english: "jacket, open", nsfw: true },
   { chinese: "紧身衣拉扯", english: "leotard pull", nsfw: true },
@@ -157,7 +156,6 @@ export const items: PromptItem[] = [
   { chinese: "裙子敞开", english: "open skirt", nsfw: true },
   { chinese: "裙子拉扯", english: "skirt pull", nsfw: true },
   { chinese: "裙子掀起", english: "skirt lift", nsfw: true },
-  { chinese: "泳衣拨开", english: "swimsuit aside", nsfw: true },
   { chinese: "比基尼底裤拨开", english: "bikini bottom aside", nsfw: true },
 
   // 仅穿戴特定饰品
@@ -200,16 +198,12 @@ export const items: PromptItem[] = [
   { chinese: "捂双眼", english: "covering own eyes", nsfw: true },
   { chinese: "捂脸", english: "covering face", nsfw: true },
   { chinese: "捂嘴", english: "covering own mouth", nsfw: true },
-  { chinese: "裸体遮挡", english: "nude cover", nsfw: true },
 
   // 触碰衣物
   { chinese: "整理衣服", english: "adjusting clothes", nsfw: true },
   { chinese: "抓衣服", english: "clothes grab", nsfw: true },
   { chinese: "抓围裙", english: "apron grab", nsfw: true },
-  { chinese: "抓衣领", english: "collar grab", nsfw: true },
-  { chinese: "抓领带", english: "necktie grab", nsfw: true },
   { chinese: "抓别人裙子", english: "grabbing another's skirt", nsfw: true },
-  { chinese: "扯衣领", english: "collar tug", nsfw: true },
   { chinese: "扯连衣裙", english: "dress tug", nsfw: true },
   { chinese: "扯衬衫", english: "shirt tug", nsfw: true },
   { chinese: "扯裙子", english: "skirt tug", nsfw: true },

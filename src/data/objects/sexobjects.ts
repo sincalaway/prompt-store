@@ -27,7 +27,6 @@ export const items: PromptItem[] = [
   { chinese: "食物插入", english: "food insertion", nsfw: true },
   { chinese: "前列腺按摩器", english: "prostate massager", nsfw: true },
   // 泵
-  { chinese: "吸奶器", english: "breast pump", nsfw: true },
   { chinese: "阴蒂吸泵", english: "clitoris pump", nsfw: true },
   // 其他玩具
   { chinese: "实体娃娃", english: "sex doll", nsfw: true },
@@ -60,21 +59,13 @@ export const items: PromptItem[] = [
   { chinese: "阴茎跳蛋", english: "vibrator on penis", nsfw: true },
   // BDSM / 束缚装备
   { chinese: "肛钩", english: "anal hook", nsfw: true },
-  { chinese: "眼罩", english: "blindfold", nsfw: true },
   { chinese: "束缚服", english: "bondage outfit", nsfw: true },
   { chinese: "链条", english: "chain", nsfw: true },
-  { chinese: "乳头链", english: "nipple chain", nsfw: true },
-  { chinese: "贞操带", english: "chastity belt", nsfw: true },
   { chinese: "贞操胸罩", english: "chastity bra", nsfw: true },
-  { chinese: "贞操笼", english: "chastity cage", nsfw: true },
   // 夹子
-  { chinese: "阴蒂夹", english: "clitoris clamp", nsfw: true },
-  { chinese: "乳头夹", english: "nipple clamps", nsfw: true },
   { chinese: "舌夹", english: "tongue clamp", nsfw: true },
   // 束缚具
-  { chinese: "项圈", english: "collar", nsfw: true },
   { chinese: "束腕", english: "cuffs", nsfw: true },
-  { chinese: "手铐", english: "handcuffs", nsfw: true },
   { chinese: "脚镣", english: "hobble", nsfw: true },
   { chinese: "镣铐", english: "shackles", nsfw: true },
   // 口塞
@@ -90,17 +81,13 @@ export const items: PromptItem[] = [
   // 其他束缚装备
   { chinese: "束缚衣", english: "gimp suit", nsfw: true },
   { chinese: "牵引绳", english: "leash", nsfw: true },
-  { chinese: "阴蒂牵引绳", english: "clitoris leash", nsfw: true },
   { chinese: "阴茎牵引绳", english: "leash on penis", nsfw: true },
   { chinese: "乳头牵引绳", english: "nipple leash", nsfw: true },
-  { chinese: "鼻钩", english: "nose hook", nsfw: true },
-  { chinese: "穿刺", english: "piercing", nsfw: true },
   { chinese: "穿刺标签组", english: "tag group:piercings", nsfw: true },
   { chinese: "颈手枷", english: "pillory", nsfw: true },
   { chinese: "足枷", english: "stocks", nsfw: true },
   { chinese: "绳索", english: "rope", nsfw: true },
   { chinese: "胯绳", english: "crotch rope", nsfw: true },
-  { chinese: "尿道探入", english: "sounding", nsfw: true },
   { chinese: "分腿杆", english: "spreader bar", nsfw: true },
   { chinese: "鞭子", english: "whip", nsfw: true },
   { chinese: "驯马鞭", english: "riding crop", nsfw: true },

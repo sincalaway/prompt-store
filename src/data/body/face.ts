@@ -22,7 +22,6 @@ export const items: PromptItem[] = [
   
   // 消极情绪
   { chinese: "无聊", english: "bored" },
-  { chinese: "闭眼", english: "closed eyes" },
   { chinese: "困惑", english: "confused" },
   { chinese: "疯狂", english: "crazy" },
   { chinese: "坚定", english: "determined" },
@@ -37,7 +36,6 @@ export const items: PromptItem[] = [
   { chinese: "捂脸", english: "facepalm" },
   { chinese: "慌乱", english: "flustered" },
   { chinese: "沮丧", english: "frustrated" },
-  { chinese: "皱眉", english: "furrowed brow" },
   { chinese: "做鬼脸", english: "grimace" },
   { chinese: "内疚", english: "guilt" },
   { chinese: "快乐", english: "happy" },
@@ -55,7 +53,6 @@ export const items: PromptItem[] = [
   { chinese: "双眉上扬", english: "raised eyebrows" },
   { chinese: "眉头内抬", english: "raised inner eyebrows" },
   { chinese: "强忍泪水", english: "rape face" },
-  { chinese: "翻白眼", english: "rolling eyes" },
   
   // 悲伤
   { chinese: "悲伤", english: "sad" },
@@ -175,5 +172,4 @@ export const items: PromptItem[] = [
   { chinese: "看美食", english: "food awe" },
   { chinese: "看肌肉", english: "muscle awe", nsfw: true },
   { chinese: "看阴茎", english: "penis awe", nsfw: true },
-  { chinese: "凝视", english: "staring" },
 ];

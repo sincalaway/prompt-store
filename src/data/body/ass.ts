@@ -26,7 +26,6 @@ export const items: PromptItem[] = [
   { chinese: "肛门拳交", english: "anal fisting", nsfw: true },
   { chinese: "拍打臀部", english: "ass smack", nsfw: true },
   { chinese: "遮挡肛门", english: "covering anus", nsfw: true },
-  { chinese: "遮挡臀部", english: "covering ass", nsfw: true },
   { chinese: "抓捏他人臀部", english: "grabbing another's ass", nsfw: true },
   { chinese: "抓捏自己臀部", english: "grabbing own ass", nsfw: true },
   { chinese: "揉捏", english: "groping", nsfw: true },

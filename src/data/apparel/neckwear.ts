@@ -19,7 +19,6 @@ export const items: PromptItem[] = [
   { chinese: "亲吻脖子", english: "kissing neck" },
 
   // Detached Neckwear - Chokers and Standalone Collars (独立颈饰 - 项圈与独立衣领)
-  { chinese: "颈链", english: "choker" },
   { chinese: "宠物项圈", english: "animal collar" },
   { chinese: "皮带项圈", english: "belt collar" },
   { chinese: "褶皱领", english: "frilled collar" },
@@ -39,9 +38,6 @@ export const items: PromptItem[] = [
   // Other Standalone (其他独立颈饰)
   { chinese: "头巾围脖", english: "bandana around neck" },
   { chinese: "围脖", english: "neck warmer" },
-  { chinese: "颈环", english: "neck ring" },
-  { chinese: "拉夫领", english: "neck ruff" },
-  { chinese: "围巾", english: "scarf" },
   { chinese: "伊丽莎白圈", english: "pet cone" },
 
   // Shirt and Dress Collar Designs (衬衫与连衣裙衣领设计)
@@ -80,7 +76,6 @@ export const items: PromptItem[] = [
   { chinese: "颈铃", english: "neck bell" },
   { chinese: "颈间丝带", english: "neck ribbon" },
   { chinese: "颈间流苏", english: "neck tassel" },
-  { chinese: "项链", english: "necklace" },
 
   // Ties (领带/领结类)
   { chinese: "阿斯科特领带", english: "ascot" },
@@ -88,10 +83,8 @@ export const items: PromptItem[] = [
   { chinese: "蝴蝶结领结", english: "bowtie" },
   { chinese: "十字领带", english: "cross tie" },
   { chinese: "小方巾", english: "neckerchief" },
-  { chinese: "领带", english: "necktie" },
 
   // On Shoulders (披挂在肩)
-  { chinese: "羽毛围巾", english: "feather boa" },
   { chinese: "披肩", english: "stole" },
   { chinese: "古埃及项饰", english: "usekh collar" },
   { chinese: "短披肩", english: "capelet" },
@@ -100,7 +93,6 @@ export const items: PromptItem[] = [
 
   // Misc. neckwear (其他颈饰)
   { chinese: "动物绕颈", english: "animal around neck" },
-  { chinese: "头巾围脖", english: "bandana around neck" },
   { chinese: "眼镜挂脖", english: "eyewear around neck" },
   { chinese: "护目镜挂脖", english: "goggles around neck" },
   { chinese: "护喉甲", english: "gorget" },
@@ -117,9 +109,7 @@ export const items: PromptItem[] = [
   { chinese: "有领短披肩", english: "collared capelet" },
   { chinese: "有领外套", english: "collared coat" },
   { chinese: "有领露脐上衣", english: "collared crop top" },
-  { chinese: "有领连衣裙", english: "collared dress" },
   { chinese: "有领紧身衣", english: "collared leotard" },
-  { chinese: "有领衬衫", english: "collared shirt" },
   { chinese: "有领短开衫", english: "collared shrug" },
   { chinese: "有领马甲", english: "collared vest" },
 
@@ -131,14 +121,10 @@ export const items: PromptItem[] = [
   { chinese: "交叉挂脖", english: "criss-cross halter" },
 
   // Sailor collar (水手领)
-  { chinese: "水手领", english: "sailor collar" },
   { chinese: "水手比基尼", english: "sailor bikini" },
-  { chinese: "水手连衣裙", english: "sailor dress" },
   { chinese: "水手衬衫", english: "sailor shirt" },
-  { chinese: "水手服", english: "serafuku" },
 
   // Turtleneck (高领)
-  { chinese: "高领", english: "turtleneck" },
   { chinese: "无袖高领", english: "sleeveless turtleneck" },
   { chinese: "高领连体衣", english: "turtleneck bodysuit" },
   { chinese: "高领连衣裙", english: "turtleneck dress" },
@@ -267,11 +253,8 @@ export const items: PromptItem[] = [
   { chinese: "钥匙颈链", english: "key choker" },
   { chinese: "蕾丝颈链", english: "lace choker" },
   { chinese: "蕾丝镶边颈链", english: "lace-trimmed choker" },
-  { chinese: "O形环颈链", english: "o-ring choker" },
   { chinese: "心环颈链", english: "heart ring choker" },
-  { chinese: "吊坠颈链", english: "pendant choker" },
   { chinese: "兔子颈链", english: "rabbit choker" },
-  { chinese: "丝带颈链", english: "ribbon choker" },
   { chinese: "银色颈链", english: "silver choker" },
   { chinese: "骷髅颈链", english: "skull choker" },
   { chinese: "尖钉颈链", english: "spiked choker" },
@@ -326,7 +309,6 @@ export const items: PromptItem[] = [
   { chinese: "十字架项链", english: "cross necklace" },
   { chinese: "骰子项链", english: "dice necklace" },
   { chinese: "羽毛项链", english: "feather necklace" },
-  { chinese: "花彩项链", english: "festoon" },
   { chinese: "花朵项链", english: "flower necklace" },
   { chinese: "花环项链", english: "lei" },
   { chinese: "金色项链", english: "gold necklace" },
@@ -337,17 +319,11 @@ export const items: PromptItem[] = [
   { chinese: "四叶草项链", english: "four-leaf clover necklace" },
   { chinese: "闪电项链", english: "lightning bolt necklace" },
   { chinese: "勾玉项链", english: "magatama necklace" },
-  { chinese: "珍珠项链", english: "pearl necklace" },
-  { chinese: "吊坠", english: "pendant" },
-  { chinese: "护身符", english: "amulet" },
   { chinese: "友情护身符", english: "friendship charm" },
   { chinese: "怀表吊坠", english: "locket" },
-  { chinese: "勾玉", english: "magatama" },
-  { chinese: "五芒星", english: "pentacle" },
   { chinese: "胸甲链", english: "plastron" },
   { chinese: "圆环项链", english: "ring necklace" },
   { chinese: "宝石串项链", english: "riviere" },
-  { chinese: "肩链", english: "shoulder necklace" },
   { chinese: "贝壳项链", english: "shell necklace" },
   { chinese: "银色项链", english: "silver necklace" },
   { chinese: "骷髅项链", english: "skull necklace" },

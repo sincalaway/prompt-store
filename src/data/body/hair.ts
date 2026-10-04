@@ -54,13 +54,8 @@ export const items: PromptItem[] = [
   { chinese: "梳子", english: "comb" },
   { chinese: "接发", english: "hair extensions" },
   { chinese: "赛博发管", english: "CYBERLOX" },
-  { chinese: "发饰", english: "hair ornament" },
   { chinese: "发铃/发饰铃铛", english: "hair bell" },
   { chinese: "弹力发圈", english: "hair bobbles" },
-  { chinese: "蝴蝶结发饰", english: "hair bow" },
-  { chinese: "发带", english: "hair ribbon" },
-  { chinese: "发夹", english: "hairclip" },
-  { chinese: "发簪", english: "hairpin" },
   { chinese: "发花/头花", english: "hair flower" },
   { chinese: "发管", english: "hair tubes" },
   { chinese: "褶边发管", english: "frilled hair tubes" },
@@ -73,7 +68,6 @@ export const items: PromptItem[] = [
   { chinese: "头带/发带", english: "headband" },
   { chinese: "插在头发里的刀", english: "knife in hair" },
   { chinese: "大肠发圈", english: "SCRUNCHIE" },
-  { chinese: "假发", english: "wig" },
   
   // 胡须
   { chinese: "胡须", english: "facial hair" },

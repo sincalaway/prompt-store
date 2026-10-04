@@ -173,7 +173,6 @@ export const items: PromptItem[] = [
   { chinese: "九枝烛台", english: "menorah" },
 
   // 圣诞节
-  { chinese: "圣诞树", english: "christmas tree" },
   { chinese: "圣诞快乐", english: "merry christmas" },
   { chinese: "槲寄生", english: "mistletoe" },
   { chinese: "圣诞老人", english: "santa claus" },

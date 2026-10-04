@@ -101,7 +101,6 @@ export const items: PromptItem[] = [
   { chinese: "发卷", english: "hair rollers" },
   { chinese: "指甲油", english: "nail polish" },
   { chinese: "脚指甲油", english: "toenail polish" },
-  { chinese: "指甲油", english: "nail polish" },
   { chinese: "长指甲", english: "long fingernails" },
   { chinese: "指甲油瓶", english: "nail polish bottle" },
   { chinese: "指甲油刷", english: "nail polish brush" },

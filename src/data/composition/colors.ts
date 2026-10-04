@@ -35,7 +35,6 @@ export const items: PromptItem[] = [
 
   // Filters (滤镜)
   { chinese: "怀旧棕褐色", english: "sepia" },
-  { chinese: "高对比度", english: "high contrast" },
   { chinese: "有限调色板", english: "limited palette" },
   { chinese: "多单色", english: "multiple monochrome" },
   { chinese: "粉彩配色", english: "pastel colors" },

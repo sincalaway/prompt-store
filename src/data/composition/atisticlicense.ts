@@ -33,7 +33,6 @@ export const items: PromptItem[] = [
   { chinese: "无眼镜", english: "no eyewear" },
   { chinese: "缺少头饰", english: "missing headwear" },
   { chinese: "缺少腿饰", english: "missing legwear" },
-  { chinese: "无面具", english: "no mask" },
   { chinese: "无耳环", english: "no earrings" },
 
   // Changes of body parts other than hair and eyes / 除头发和眼睛外的身体部位变化
@@ -45,7 +44,6 @@ export const items: PromptItem[] = [
   { chinese: "替换肌肉尺寸", english: "alternate muscle size" },
   { chinese: "替换翅膀", english: "alternate wings" },
   { chinese: "替换肤色", english: "alternate skin color" },
-  { chinese: "兽耳模式", english: "kemonomimi mode" },
   { chinese: "无兽耳", english: "no animal ears" },
   { chinese: "无面部标记", english: "no facial mark" },
   { chinese: "无火焰", english: "no fire" },
@@ -66,7 +64,6 @@ export const items: PromptItem[] = [
   // Changes of eyes / 眼睛变化
   { chinese: "替换瞳色", english: "alternate eye color" },
   { chinese: "瞳色切换", english: "eye color switch" },
-  { chinese: "异常睁大的眼睛", english: "unusually open eyes" },
 
   // Changes of personality and roles / 性格与角色变化
   { chinese: "角色背离", english: "out of character" },

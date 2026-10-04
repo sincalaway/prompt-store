@@ -2,17 +2,13 @@ import type { PromptItem } from '../../types';
 
 export const items: PromptItem[] = [
   // anatomy of the pussy - 阴部解剖
-  { chinese: "阴蒂", english: "clitoris", nsfw: true },
   { chinese: "勃起的阴蒂", english: "erect clitoris", nsfw: true },
   { chinese: "大阴蒂", english: "large clitoris", nsfw: true },
   { chinese: "巨大阴蒂", english: "huge clitoris", nsfw: true },
-  { chinese: "维纳斯裂谷", english: "cleft of venus", nsfw: true },
-  { chinese: "阴唇", english: "labia", nsfw: true },
   { chinese: "深色阴唇", english: "dark labia", nsfw: true },
   { chinese: "长阴唇", english: "long labia", nsfw: true },
   { chinese: "阴阜", english: "mons pubis", nsfw: true },
   { chinese: "丰满阴阜", english: "fat mons", nsfw: true },
-  { chinese: "阴毛", english: "pubic hair", nsfw: true },
   { chinese: "阴部/小穴", english: "pussy", nsfw: true },
   { chinese: "无阴部", english: "no pussy", nsfw: true },
   { chinese: "有色阴部", english: "colored pussy", nsfw: true },
@@ -66,6 +62,5 @@ export const items: PromptItem[] = [
   { chinese: "前贴/遮阴贴", english: "maebari", nsfw: true },
 
   // tag group: panties - 内裤
-  { chinese: "内裤", english: "panties", nsfw: true },
   { chinese: "无裆底内裤", english: "strapless bottom", nsfw: true },
 ];

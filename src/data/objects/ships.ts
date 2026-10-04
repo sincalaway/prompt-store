@@ -2,7 +2,6 @@ import type { PromptItem } from '../../types';
 
 export const items: PromptItem[] = [
   // Categories
-  { chinese: "航空母舰", english: "aircraft carrier" },
   { chinese: "战列舰", english: "battleship" },
   { chinese: "巡洋舰", english: "cruiser" },
   { chinese: "驱逐舰", english: "destroyer" },
@@ -282,18 +281,10 @@ export const items: PromptItem[] = [
   { chinese: "水上飞机", english: "seaplane" },
 
   // Conflicts
-  { chinese: "海湾战争", english: "gulf war" },
-  { chinese: "越南战争", english: "vietnam war" },
-  { chinese: "第一次世界大战", english: "world war I" },
-  { chinese: "第二次世界大战", english: "world war II" },
 
   // Markings and Symbols
-  { chinese: "徽章", english: "emblem" },
-  { chinese: "锤子与镰刀", english: "hammer and sickle" },
   { chinese: "铁十字勋章", english: "iron cross" },
   { chinese: "痛车涂装", english: "itasha" },
-  { chinese: "旭日旗", english: "rising sun flag" },
-  { chinese: "大卫之星", english: "star of david" },
   { chinese: "万字饰", english: "swastika" },
 
   // Personnel Equipment

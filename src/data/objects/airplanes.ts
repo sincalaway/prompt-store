@@ -404,6 +404,4 @@ export const items: PromptItem[] = [
   { chinese: "航空护目镜", english: "aviator goggles" },
   { chinese: "飞行服", english: "flight suit" },
   { chinese: "平视显示器", english: "heads-up display" },
-  { chinese: "氧气面罩", english: "oxygen mask" },
-  { chinese: "抗荷服", english: "g-suit" },
 ];

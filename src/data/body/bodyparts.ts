@@ -15,7 +15,6 @@ export const items: PromptItem[] = [
   { chinese: "鼻子", english: "nose" },
   { chinese: "头部翅膀", english: "head wings" },
   { chinese: "嘴唇", english: "lips" },
-  { chinese: "后颈", english: "nape" },
   { chinese: "舌头", english: "tongue" },
   { chinese: "长舌头", english: "long tongue" },
 
@@ -27,11 +26,8 @@ export const items: PromptItem[] = [
   { chinese: "背部", english: "back" },
   { chinese: "背中沟", english: "median furrow" },
   { chinese: "乳房", english: "breasts" },
-  { chinese: "锁骨", english: "collarbone" },
   { chinese: "心脏", english: "heart" },
   { chinese: "肺", english: "lungs" },
-  { chinese: "脖子", english: "neck" },
-  { chinese: "长脖子", english: "long neck" },
   { chinese: "乳头", english: "nipples", nsfw: true },
   { chinese: "遮盖的乳头", english: "covered nipples", nsfw: true },
   { chinese: "内陷乳头", english: "inverted nipples", nsfw: true },
@@ -44,7 +40,6 @@ export const items: PromptItem[] = [
 
   // Lower Torso / 下躯干
   { chinese: "下躯干", english: "lower torso" },
-  { chinese: "肛门", english: "anus", nsfw: true },
   { chinese: "屁股", english: "ass", nsfw: true },
   { chinese: "泄殖腔", english: "cloaca", nsfw: true },
   { chinese: "维纳斯酒窝", english: "dimples of venus" },
@@ -114,7 +109,6 @@ export const items: PromptItem[] = [
   { chinese: "肱二头肌", english: "biceps" },
   { chinese: "脚", english: "feet" },
   { chinese: "丑脚", english: "bad feet" },
-  { chinese: "赤脚", english: "barefoot" },
   { chinese: "脏脚", english: "dirty feet" },
   { chinese: "脚底", english: "soles" },
   { chinese: "手", english: "hands" },

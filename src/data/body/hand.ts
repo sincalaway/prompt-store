@@ -23,18 +23,9 @@ export const items: PromptItem[] = [
   // 手放在胸部
   { chinese: "握住自己胸部", english: "breast hold" },
   { chinese: "抓自己胸部", english: "grabbing own breast" },
-  { chinese: "抓他人胸部", english: "grabbing another's breast" },
-  { chinese: "抓平胸", english: "flat chest grab" },
-  { chinese: "引导抓胸", english: "guided breast grab" },
-  { chinese: "托胸", english: "breast lift" },
-  { chinese: "挤胸", english: "breasts squeezed together" },
   { chinese: "压胸", english: "breast suppress" },
-  { chinese: "揉胸", english: "groping" },
   { chinese: "手臂夹胸", english: "arm between breasts" },
   { chinese: "手伸进胸罩", english: "hand in bra" },
-  { chinese: "拧乳头", english: "nipple tweak" },
-  { chinese: "戳他人胸部", english: "poking another's breast" },
-  { chinese: "戳自己胸部", english: "poking own breast" },
 
   // 手放在下半身
   { chinese: "手放他人腰上", english: "hand on another's waist" },
@@ -87,7 +78,6 @@ export const items: PromptItem[] = [
   { chinese: "挤脸颊", english: "cheek squash" },
   { chinese: "手托他人下巴", english: "hand on another's chin" },
   { chinese: "手摸他人脖子", english: "hand on another's neck" },
-  { chinese: "掐脖子", english: "strangling" },
 
   // 手放在他人身上 - 肩部以下
   { chinese: "搂肩", english: "arm around shoulder" },

@@ -50,7 +50,6 @@ export const items: PromptItem[] = [
   { chinese: "尾巴捆绑", english: "bound tail", nsfw: true },
   { chinese: "躯干捆绑", english: "bound torso", nsfw: true },
   { chinese: "箱式缚", english: "box tie", nsfw: true },
-  { chinese: "蛙腿缚", english: "frogtie", nsfw: true },
   { chinese: "猪缚", english: "hogtie", nsfw: true },
   { chinese: "手臂分离缚", english: "separated arms", nsfw: true },
   { chinese: "腿部分离缚", english: "separated legs", nsfw: true },

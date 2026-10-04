@@ -2,21 +2,17 @@ import type { PromptItem } from '../../types';
 
 export const items: PromptItem[] = [
   // 主要
-  { chinese: "脚", english: "feet" },
 
   // 风格
-  { chinese: "赤脚", english: "barefoot" },
   { chinese: "不穿鞋", english: "no shoes" },
 
   // 解剖/部位
-  { chinese: "脚底", english: "soles" },
   { chinese: "足弓", english: "arched soles" },
   { chinese: "浅色脚底", english: "light-skinned_soles" },
   { chinese: "脚跟", english: "heel" },
   { chinese: "脚踝", english: "ankles" },
 
   // 脚趾
-  { chinese: "脚趾", english: "toes" },
   { chinese: "希腊脚", english: "greek toe" },
   { chinese: "脚趾张开", english: "spread toes" },
   { chinese: "脚趾蜷缩", english: "toe scrunch" },
@@ -25,7 +21,6 @@ export const items: PromptItem[] = [
   { chinese: "露趾缝", english: "toe cleavage" },
   { chinese: "脚趾甲", english: "toenails" },
   { chinese: "长脚趾甲", english: "long toenails" },
-  { chinese: "尖脚趾甲", english: "sharp toenails" },
   { chinese: "甲油", english: "toenail polish" },
   { chinese: "涂指甲", english: "painting toenails" },
 
@@ -39,23 +34,18 @@ export const items: PromptItem[] = [
   { chinese: "招牌姿势", english: "the pose" },
 
   // 服饰与配件
-  { chinese: "脚链", english: "anklet" },
   { chinese: "脚趾环", english: "toe ring" },
   { chinese: "袜头缝线", english: "toe seam" },
   { chinese: "腿袜/裤袜", english: "legwear" },
-  { chinese: "袜子", english: "socks" },
   { chinese: "五指袜", english: "toe socks" },
   { chinese: "露趾腿袜", english: "toeless legwear" },
   { chinese: "马镫袜", english: "stirrup legwear" },
   { chinese: "新娘腿袜", english: "bridal legwear" },
   { chinese: "过膝袜", english: "thighhighs" },
-  { chinese: "连裤袜", english: "pantyhose" },
   { chinese: "鞋子", english: "footwear" },
-  { chinese: "凉鞋", english: "sandals" },
   { chinese: "系带高跟鞋", english: "strappy heels" },
 
   // 动作与癖好
-  { chinese: "脏脚", english: "dirty feet" },
   { chinese: "泡脚", english: "soaking feet" },
   { chinese: "用脚夹物", english: "holding with feet" },
   { chinese: "恋足", english: "foot worship" },

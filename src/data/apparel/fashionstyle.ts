@@ -5,7 +5,6 @@ export const items: PromptItem[] = [
   { chinese: "贵族服饰", english: "Aristocratic clothes" },
   { chinese: "机车服", english: "Biker clothes" },
   { chinese: "休闲风", english: "Casual" },
-  { chinese: "正装", english: "Formal clothes" },
   { chinese: "哥特风", english: "Goth fashion" },
   { chinese: "嘻哈风", english: "Hip Hop" },
   { chinese: "朋克风", english: "Punk" },

@@ -55,7 +55,6 @@ export const items: PromptItem[] = [
   // Other details of the appearance - 外观细节
   { chinese: "装甲连衣裙", english: "armored dress" },
   { chinese: "露背连衣裙", english: "backless dress" },
-  { chinese: "裙撑", english: "crinoline" },
   { chinese: "有领连衣裙", english: "collared dress" },
   { chinese: "荷叶边连衣裙", english: "frilled dress" },
   { chinese: "毛皮镶边连衣裙", english: "fur-trimmed dress" },
@@ -63,7 +62,6 @@ export const items: PromptItem[] = [
   { chinese: "半截连衣裙", english: "half-dress" },
   { chinese: "挂颈式连衣裙", english: "halter dress" },
   { chinese: "高开衩连衣裙", english: "highleg dress" },
-  { chinese: "前短后长裙", english: "high-low skirt" },
   { chinese: "窄身连衣裙", english: "hobble dress" },
   { chinese: "异形连衣裙", english: "impossible dress" },
   { chinese: "蕾丝镶边连衣裙", english: "lace-trimmed dress" },
@@ -82,7 +80,6 @@ export const items: PromptItem[] = [
 
   // Models of dress as a whole - 款式/模型
   { chinese: "蛋糕裙", english: "cake dress" },
-  { chinese: "旗袍", english: "china dress" },
   { chinese: "外套式连衣裙", english: "coat dress" },
   { chinese: "鸡尾酒裙", english: "cocktail dress" },
   { chinese: "牛仔连衣裙", english: "denim dress" },
@@ -104,6 +101,5 @@ export const items: PromptItem[] = [
   { chinese: "帐篷式连衣裙", english: "tent dress" },
   { chinese: "梯形连衣裙", english: "trapeze dress" },
   { chinese: "直筒连衣裙", english: "tube dress" },
-  { chinese: "奥黛", english: "ao dai" },
   { chinese: "婚纱", english: "wedding dress" }
 ];

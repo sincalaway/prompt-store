@@ -13,7 +13,6 @@ export const items: PromptItem[] = [
   { chinese: "导盲犬", english: "guide dog" },
   { chinese: "群狗", english: "multiple dogs" },
   { chinese: "汪洋大海", english: "too many dogs" },
-  { chinese: "无人", english: "no humans" },
   { chinese: "遛狗", english: "pet walking" },
   { chinese: "幼犬", english: "puppy" },
   
@@ -75,7 +74,6 @@ export const items: PromptItem[] = [
   { chinese: "郊狼", english: "Coyote" },
   { chinese: "豺", english: "Dhole" },
   { chinese: "丁狗", english: "Dingo" },
-  { chinese: "狐狸", english: "Fox" },
   { chinese: "胡狼", english: "Jackal" },
   { chinese: "鬃狼", english: "Maned Wolf" },
   { chinese: "灰狼", english: "Wolf" }

@@ -79,7 +79,6 @@ export const items: PromptItem[] = [
   // 眼周
   { chinese: "眼周", english: "Around the eyes" },
   { chinese: "眼袋", english: "bags under eyes" },
-  { chinese: "卧蚕", english: "aegyo sal" },
   { chinese: "眼眶淤青", english: "bruised eye" },
   { chinese: "电子眼", english: "electric eyes" },
   { chinese: "燃烧的眼睛", english: "flaming eyes" },
@@ -90,7 +89,6 @@ export const items: PromptItem[] = [
   { chinese: "纽扣眼", english: "button eyes" },
   { chinese: "头足类眼睛", english: "cephalopod eyes" },
   { chinese: "复眼", english: "compound eyes" },
-  { chinese: "水平瞳孔", english: "horizontal pupils" },
   { chinese: "透镜眼", english: "lens eye" },
   { chinese: "像素眼", english: "pixel eyes" },
   
@@ -99,7 +97,6 @@ export const items: PromptItem[] = [
   { chinese: "眼球突出", english: "eye pop" },
   { chinese: "疯狂的眼神", english: "crazy eyes" },
   { chinese: "空洞的眼神", english: "empty eyes" },
-  { chinese: "虚线眼", english: "dashed eyes" },
   { chinese: "心形眼睛", english: "heart-shaped eyes" },
   { chinese: "野和眼", english: "Nonowa" },
   { chinese: "实心圆眼", english: "solid circle eyes" },
@@ -134,11 +131,8 @@ export const items: PromptItem[] = [
   // 表情符号
   { chinese: "> < 眼", english: "> <" },
   { chinese: "DX 眼", english: "DX" },
-  { chinese: "O o 眼", english: "O o" },
-  { chinese: "0 0 眼", english: "0 0" },
   { chinese: "3 3 眼", english: "3 3" },
   { chinese: "6 9 眼", english: "6 9" },
-  { chinese: "@ @ 眼", english: "@ @" },
   { chinese: "^ ^ 眼", english: "^ ^" },
   { chinese: "= = 眼", english: "= =" },
   { chinese: "+ + 眼", english: "+ +" },
@@ -161,15 +155,9 @@ export const items: PromptItem[] = [
   { chinese: "蒙眼布", english: "blindfold" },
   { chinese: "帽子遮眼", english: "hat over eyes" },
   { chinese: "眼罩", english: "eyepatch" },
-  { chinese: "睫毛", english: "eyelashes" },
-  { chinese: "彩色睫毛", english: "colored eyelashes" },
   { chinese: "假睫毛", english: "fake eyelashes" },
   { chinese: "透过头发可见眼睛", english: "eyes visible through hair" },
-  { chinese: "眼镜", english: "glasses" },
   { chinese: "化妆", english: "makeup" },
-  { chinese: "眼线", english: "eyeliner" },
-  { chinese: "眼影", english: "eyeshadow" },
-  { chinese: "睫毛膏", english: "mascara" },
   
   // 凝视
   { chinese: "眼神交流", english: "eye contact" },
@@ -228,7 +216,6 @@ export const items: PromptItem[] = [
   { chinese: "上翻眼", english: "upturned eyes" },
   { chinese: "外斜眼", english: "wall-eyed" },
   { chinese: "睁大眼睛", english: "wide-eyed" },
-  { chinese: "皱眉闭眼", english: "wince" },
 
   { chinese: "美丽细致的眼睛", english: "beautiful detailed eyes" },
 ];

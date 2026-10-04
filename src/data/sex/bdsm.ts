@@ -9,15 +9,12 @@ export const items: PromptItem[] = [
   { chinese: "男穿女裸 (CMNF)", english: "clothed male nude female", nsfw: true },
   { chinese: "男穿男裸 (CMNM)", english: "clothed male nude male", nsfw: true },
   { chinese: "女性支配", english: "femdom", nsfw: true },
-  { chinese: "恋足", english: "foot worship", nsfw: true },
   { chinese: "人肉烟灰缸", english: "human ashtray", nsfw: true },
   { chinese: "人型家具", english: "human furniture", nsfw: true },
   { chinese: "人体家具癖", english: "forniphilia", nsfw: true },
-  { chinese: "人椅", english: "human chair", nsfw: true },
   { chinese: "人桌", english: "human table", nsfw: true },
   { chinese: "羞辱", english: "humiliation", nsfw: true },
   { chinese: "延迟高潮", english: "orgasm denial", nsfw: true },
-  { chinese: "奴隶", english: "slave", nsfw: true },
   { chinese: "性奴", english: "sex slave", nsfw: true },
   { chinese: "感官剥夺", english: "sensory deprivation", nsfw: true },
   { chinese: "被踩踏", english: "stepped on", nsfw: true },
@@ -35,7 +32,6 @@ export const items: PromptItem[] = [
   { chinese: "手铐", english: "cuffs", nsfw: true },
   { chinese: "锁链束缚", english: "chained", nsfw: true },
   { chinese: "颈手枷", english: "neck violin", nsfw: true },
-  { chinese: "脚镣", english: "shackles", nsfw: true },
   { chinese: "绳缚 (吊缚)", english: "shibari: rope bondage", nsfw: true },
   { chinese: "固定束缚", english: "stationary restraints", nsfw: true },
   { chinese: "隐形束缚", english: "stealth bondage", nsfw: true },
@@ -58,7 +54,6 @@ export const items: PromptItem[] = [
   { chinese: "透过栏杆", english: "through bars", nsfw: true },
   { chinese: "地牢", english: "dungeon", nsfw: true },
   { chinese: "容器内", english: "in container", nsfw: true },
-  { chinese: "监狱", english: "prison", nsfw: true },
   { chinese: "牢房内", english: "in cell", nsfw: true },
   { chinese: "奴隶市场", english: "slave market", nsfw: true },
 
@@ -99,10 +94,8 @@ export const items: PromptItem[] = [
   { chinese: "心理退化", english: "regression (psychology)", nsfw: true },
 
   // Clamps / 夹子
-  { chinese: "乳头夹", english: "nipple clamps", nsfw: true },
   { chinese: "阴唇夹", english: "labia clamps", nsfw: true },
   { chinese: "睾丸夹", english: "testicle clamps", nsfw: true },
-  { chinese: "阴蒂夹", english: "clitoris clamp", nsfw: true },
 
   // Marks / 痕迹标记
   { chinese: "截肢", english: "amputee", nsfw: true },
@@ -145,6 +138,5 @@ export const items: PromptItem[] = [
   { chinese: "女支配者装束", english: "dominatrix", nsfw: true },
   { chinese: "胶衣怪客装", english: "gimp suit", nsfw: true },
   { chinese: "胶衣头套", english: "gimp mask", nsfw: true },
-  { chinese: "乳胶", english: "latex", nsfw: true },
   { chinese: "绳缚比基尼", english: "shibarikini", nsfw: true },
 ];

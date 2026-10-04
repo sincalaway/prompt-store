@@ -2,10 +2,7 @@ import type { PromptItem } from '../../types';
 
 export const items: PromptItem[] = [
   // 主要
-  { chinese: "眼镜", english: "glasses" },
-  { chinese: "护目镜", english: "goggles" },
   { chinese: "单片镜", english: "monocle" },
-  { chinese: "太阳镜", english: "sunglasses" },
   // 镜框颜色
   { chinese: "水蓝框", english: "aqua-framed eyewear" },
   { chinese: "黑框", english: "black-framed eyewear" },
@@ -52,7 +49,6 @@ export const items: PromptItem[] = [
   // 动作
   { chinese: "换眼镜", english: "alternate eyewear" },
   { chinese: "推眼镜", english: "adjusting eyewear" },
-  { chinese: "戴眼镜", english: "bespectacled" },
   { chinese: "破损眼镜", english: "broken eyewear" },
   { chinese: "擦眼镜", english: "cleaning eyewear" },
   { chinese: "歪戴眼镜", english: "crooked eyewear" },
@@ -73,18 +69,14 @@ export const items: PromptItem[] = [
   { chinese: "拿着摘下的眼镜", english: "holding removed eyewear" },
   { chinese: "找眼镜", english: "looking for glasses" },
   // 配件
-  { chinese: "眼镜挂绳", english: "eyewear strap" },
   { chinese: "眼镜盒", english: "glasses case" },
   { chinese: "鼻托", english: "nose pads" },
   // 眼镜子类
   { chinese: "3D眼镜", english: "3d glasses" },
   { chinese: "飞行员眼镜", english: "aviator glasses" },
   { chinese: "厚底眼镜", english: "coke-bottle glasses" },
-  { chinese: "潜水镜", english: "diving mask" },
   { chinese: "趣味眼镜", english: "novelty glasses" },
-  { chinese: "心形眼镜", english: "heart-shaped eyewear" },
   { chinese: "星形眼镜", english: "star-shaped eyewear" },
-  { chinese: "泪滴形眼镜", english: "teardrop-framed glasses" },
   { chinese: "飞行员护目镜", english: "aviator goggles" },
   { chinese: "格劳乔眼镜", english: "groucho glasses" },
   { chinese: "长柄眼镜", english: "lorgnette" },
@@ -96,7 +88,6 @@ export const items: PromptItem[] = [
   { chinese: "滑雪镜", english: "ski goggles" },
   { chinese: "X光眼镜", english: "x-ray glasses" },
   // 太阳镜
-  { chinese: "太阳镜", english: "sunglasses" },
   { chinese: "飞行员太阳镜", english: "aviator sunglasses" },
   { chinese: "卡米纳墨镜", english: "kamina shades" },
   { chinese: "百叶窗太阳镜", english: "shutter shades" },

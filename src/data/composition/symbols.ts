@@ -63,7 +63,6 @@ export const items: PromptItem[] = [
   { chinese: "口语爱心（带效果线的爱心）", english: "spoken heart" },
   { chinese: "注意线（指示线）", english: "notice lines" },
   { chinese: "喊叫线（漫画中的喊叫效果线）", english: "shout lines" },
-  { chinese: "笑脸", english: "smiley face" },
   { chinese: "波浪线", english: "squiggle" },
   { chinese: "口语波浪线", english: "spoken squiggle" },
   { chinese: "BA-90符号（日本漫画符号）", english: "symbol ba-90" },
@@ -126,7 +125,6 @@ export const items: PromptItem[] = [
   { chinese: "等号", english: "equal sign" },
   { chinese: "无穷大符号", english: "infinity symbol" },
   { chinese: "汉字 / 日文汉字", english: "hanzi/kanji" },
-  { chinese: "双喜", english: "double happiness" },
   { chinese: "寿（长寿）", english: "shou" },
   { chinese: "福字", english: "good fortune symbol" },
   { chinese: "倒福", english: "dao fu" },
@@ -173,7 +171,6 @@ export const items: PromptItem[] = [
   { chinese: "拉丁十字架", english: "latin cross" },
   { chinese: "马耳他十字架", english: "maltese cross" },
   { chinese: "东正教十字架", english: "orthodox cross" },
-  { chinese: "加号", english: "plus sign" },
   { chinese: "太阳十字架", english: "sun cross" },
   { chinese: "双横杠十字架", english: "two-barred cross" },
   // Misc symbols / 杂项符号
@@ -273,10 +270,8 @@ export const items: PromptItem[] = [
   // Symbols from the real world / 现实世界符号
   // France / 法国
   { chinese: "法国（国家级符号）", english: "france" },
-  { chinese: "鸢尾花", english: "fleur-de-lis" },
   // Japan / 日本
   { chinese: "日本", english: "japan" },
-  { chinese: "菊花纹", english: "kikumon" },
   { chinese: "三叶葵纹", english: "mitsuba aoi" },
   { chinese: "织田瓜纹", english: "oda uri" },
   { chinese: "真田家家纹", english: "sanada clan (emblem)" },

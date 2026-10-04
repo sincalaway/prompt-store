@@ -4,30 +4,22 @@ export const items: PromptItem[] = [
   // Head
   { chinese: "装甲双马尾", english: "armored twintails" },
   { chinese: "面甲", english: "faceplate" },
-  { chinese: "护额", english: "forehead protector" },
-  { chinese: "头盔", english: "helmet" },
   { chinese: "阿梅特盔", english: "armet" },
   { chinese: "巴锡奈特盔", english: "bascinet" },
   { chinese: "莫里恩式头盔", english: "morion" },
-  { chinese: "锅盔", english: "kettle helm" },
   { chinese: "鼻盔", english: "nasal helmet" },
-  { chinese: "遮阳盔", english: "pith helmet" },
   { chinese: "沙雷式头盔", english: "sallet" },
   { chinese: "尖刺盔", english: "spiked helmet" },
-  { chinese: "翼盔", english: "winged helmet" },
   // Neck
   { chinese: "锁甲护颈", english: "aventail" },
   { chinese: "护颌甲", english: "bevor" },
-  { chinese: "护喉甲", english: "gorget" },
   // Shoulders
-  { chinese: "肩甲", english: "pauldrons" },
   { chinese: "护肩", english: "shoulder pads" },
   // Arms
   { chinese: "上臂甲", english: "rerebrace" },
   { chinese: "臂甲", english: "arm guards" },
   { chinese: "肘甲", english: "couter" },
   { chinese: "圆盘护肘", english: "rondel" },
-  { chinese: "护腕", english: "bracer" },
   { chinese: "护肘", english: "elbow pads" },
   { chinese: "日本式笼手", english: "kote" },
   { chinese: "日本式黑革笼手", english: "kurokote" },
@@ -43,7 +35,6 @@ export const items: PromptItem[] = [
   { chinese: "腹裙甲", english: "faulds" },
   { chinese: "护裆", english: "codpiece" },
   // Legs
-  { chinese: "装甲靴", english: "armored boots" },
   { chinese: "铁靴", english: "sabaton" },
   { chinese: "大腿甲", english: "cuisses" },
   { chinese: "胫甲", english: "greaves" },
@@ -58,7 +49,6 @@ export const items: PromptItem[] = [
   { chinese: "小圆盾", english: "buckler" },
   { chinese: "巨盾", english: "pavise" },
   // Sets
-  { chinese: "比基尼铠甲", english: "bikini armor" },
   { chinese: "反比基尼铠甲", english: "reverse bikini armor" },
   { chinese: "排爆服", english: "bomb suit" },
   { chinese: "全身铠甲", english: "full armor" },
@@ -72,7 +62,6 @@ export const items: PromptItem[] = [
   { chinese: "日本胴", english: "dou" },
   { chinese: "日本草褶", english: "kusazuri" },
   { chinese: "日本胸板", english: "muneate" },
-  { chinese: "日本甲胄", english: "japanese armor" },
   { chinese: "日本护颈", english: "shikoro" },
   { chinese: "日本肩甲", english: "sode" },
   { chinese: "日本胫当", english: "suneate" },
@@ -92,7 +81,6 @@ export const items: PromptItem[] = [
   { chinese: "M1钢盔", english: "m1 helmet" },
   { chinese: "PASGT头盔", english: "pasgt helmet" },
   { chinese: "尖顶盔", english: "pickelhaube" },
-  { chinese: "德式钢盔", english: "stahlhelm" },
   { chinese: "M56钢盔", english: "stahlhelm m1956" },
   { chinese: "防暴盾", english: "riot shield" },
   // Futuristic

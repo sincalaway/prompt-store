@@ -2,7 +2,6 @@ import type { PromptItem } from '../../types';
 
 export const items: PromptItem[] = [
   // Main
-  { chinese: "尾巴", english: "tail" },
 
   // Number of tails
   { chinese: "尾数", english: "number of tails" },
@@ -101,7 +100,6 @@ export const items: PromptItem[] = [
   { chinese: "摇尾", english: "tail wagging" },
 
   // Misc
-  { chinese: "假尾", english: "fake tail" },
   { chinese: "心形尾", english: "heart tail" },
   { chinese: "双心尾", english: "heart tail duo" },
   { chinese: "交缠尾", english: "intertwined tails" },

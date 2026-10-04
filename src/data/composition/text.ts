@@ -17,8 +17,6 @@ export const items: PromptItem[] = [
   { chinese: "签名", english: "signature" },
   { chinese: "角色签名", english: "character signature" },
   { chinese: "歌曲名", english: "song name" },
-  { chinese: "水印", english: "watermark" },
-  { chinese: "网址", english: "web address" },
   { chinese: "武器名", english: "weapon name" },
   { chinese: "其他/杂项", english: "misc" },
   { chinese: "背景文字", english: "text background" },
@@ -36,7 +34,6 @@ export const items: PromptItem[] = [
   { chinese: "像素风格文字", english: "pixel text" },
   { chinese: "彩虹色文字", english: "rainbow text" },
   { chinese: "数码段码显示", english: "segment display" },
-  { chinese: "无声漫画", english: "silent comic" },
   { chinese: "拟声词/音效", english: "sound effects" },
   { chinese: "眼中的文字", english: "text in eyes" },
   { chinese: "文字聚焦", english: "text focus" },
@@ -232,7 +229,6 @@ export const items: PromptItem[] = [
   { chinese: "祖鲁语文本", english: "zulu text" },
   // Errors / 错误与异常
   { chinese: "语言错误/病句", english: "rangauge" },
-  { chinese: "日式英语（Engrish）", english: "engrish text" },
   { chinese: "乱码", english: "mojibake text" },
   { chinese: "错别字/笔误", english: "typo" },
   // Translation / 翻译相关

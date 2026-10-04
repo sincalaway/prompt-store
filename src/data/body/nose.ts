@@ -25,13 +25,11 @@ export const items: PromptItem[] = [
   // 伤口
   { chinese: "鼻贴创可贴", english: "bandaid on nose" },
   { chinese: "鼻子缠绷带", english: "bandage on nose" },
-  { chinese: "流鼻血", english: "nosebleed" },
   { chinese: "鼻子上有疤", english: "scar on nose" },
 
   // 从鼻子流出/冒出
   { chinese: "吹鼻泡", english: "nose bubble" },
   { chinese: "挖鼻孔", english: "nose picking" },
-  { chinese: "鼻尖泛红", english: "nose blush" },
   { chinese: "流鼻涕", english: "runny nose" },
   { chinese: "鼻子冒烟", english: "smoke from nose" },
   { chinese: "鼻子冒蒸汽", english: "steam from nose" },

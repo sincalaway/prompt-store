@@ -2,11 +2,8 @@ import type { PromptItem } from '../../types';
 
 export const items: PromptItem[] = [
   // Main
-  { chinese: "手套", english: "gloves" },
 
   // Glove types - 手套类型
-  { chinese: "长手套", english: "elbow gloves" },
-  { chinese: "露指手套", english: "fingerless gloves" },
   { chinese: "半指手套", english: "partially fingerless gloves" },
   { chinese: "翻折手套", english: "fold-over gloves" },
   { chinese: "手套筒", english: "glove cuffs" },
@@ -82,31 +79,23 @@ export const items: PromptItem[] = [
   // Other handwear - 其他手部穿戴
   { chinese: "机械手", english: "mechanical hands" },
   { chinese: "棒球手套", english: "baseball mitt" },
-  { chinese: "拳击手套", english: "boxing gloves" },
-  { chinese: "新娘长手套", english: "bridal gauntlets" },
-  { chinese: "指套", english: "finger cots" },
   { chinese: "金属护手", english: "gauntlets" },
   { chinese: "甲手", english: "kote" },
   { chinese: "黑甲手", english: "kurokote" },
-  { chinese: "连指手套", english: "mittens" },
   { chinese: "隔热手套", english: "oven mitts" },
   { chinese: "手偶", english: "hand puppets" },
 
   // Hand Accessories - 手部饰品
   { chinese: "缠绷带的手", english: "bandaged hand" },
   { chinese: "贴创可贴的手", english: "bandaid on hand" },
-  { chinese: "爪戒", english: "claw ring" },
   { chinese: "指偶", english: "finger puppet" },
   { chinese: "手链", english: "hand chains" },
   { chinese: "缠指绳", english: "string around finger" },
   { chinese: "顶针", english: "thimble" },
 
   // Rings - 戒指
-  { chinese: "戒指", english: "ring" },
   { chinese: "蝴蝶戒指", english: "butterfly ring" },
-  { chinese: "华丽戒指", english: "ornate ring" },
   { chinese: "手指蝴蝶结", english: "finger bow" },
-  { chinese: "婚戒", english: "wedding ring" },
 
   // Hand markings - 手部纹饰
   { chinese: "手指纹身", english: "finger tattoo" },

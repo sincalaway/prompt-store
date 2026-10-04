@@ -16,13 +16,11 @@ export const items: PromptItem[] = [
   { chinese: "谢顶/脱发", english: "balding" },
   
   // 超短发
-  { chinese: "超短发", english: "very short hair" },
   { chinese: "寸头", english: "buzz cut" },
   { chinese: "平头", english: "crew cut" },
   { chinese: "精灵短发", english: "pixie cut" },
   
   // 短发
-  { chinese: "短发", english: "short hair" },
   { chinese: "波波头", english: "bob cut" },
   { chinese: "倒波波头", english: "inverted bob" },
   { chinese: "锅盖头", english: "bowl cut" },
@@ -31,11 +29,9 @@ export const items: PromptItem[] = [
   { chinese: "短发长辫", english: "short hair with long locks" },
   
   // 中发
-  { chinese: "中发", english: "medium hair" },
   { chinese: "狼尾剪", english: "wolf cut" },
   
   // 长发
-  { chinese: "长发", english: "long hair" },
   { chinese: "公主切", english: "hime cut" },
   { chinese: "水母头", english: "jellyfish cut" },
   { chinese: "鲻鱼头", english: "mullet" },
@@ -200,7 +196,6 @@ export const items: PromptItem[] = [
   
   // 后颈
   { chinese: "后颈发", english: "BACK OF THE HEAD" },
-  { chinese: "后颈独毛", english: "lone nape hair" },
   
   // 身体上的头发
   { chinese: "发制比基尼", english: "hair bikini" },

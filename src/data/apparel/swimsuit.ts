@@ -3,12 +3,10 @@ import type { PromptItem } from '../../types';
 export const items: PromptItem[] = [
   // 示例 / 主类别
   { chinese: "连体泳衣", english: "one-piece swimsuit" },
-  { chinese: "比基尼", english: "bikini" },
   { chinese: "弹弓泳衣（吊带比基尼）", english: "slingshot swimsuit" },
 
   // 相关标签 - 泳衣类型
   { chinese: "泳衣类型", english: "types of swimsuits" },
-  { chinese: "比基尼", english: "bikini" },
   { chinese: "比基尼裙", english: "bikini skirt" },
   { chinese: "格纹比基尼", english: "checkered bikini" },
   { chinese: "叶子比基尼", english: "leaf bikini" },
@@ -20,19 +18,14 @@ export const items: PromptItem[] = [
   { chinese: "O型环下装", english: "o-ring bottom" },
   { chinese: "贝壳比基尼", english: "shell bikini" },
   { chinese: "侧系带比基尼底裤", english: "side-tie bikini bottom" },
-  { chinese: "运动比基尼", english: "sports bikini" },
-  { chinese: "细带比基尼", english: "string bikini" },
   { chinese: "坦克尼尼（连体比基尼）", english: "tankini" },
-  { chinese: "丁字裤比基尼", english: "thong bikini" },
   { chinese: "防晒衣/水母衣", english: "rash guard (swim shirt)" },
   { chinese: "复古泳衣", english: "old-fashioned swimsuit" },
-  { chinese: "连体泳衣", english: "one-piece swimsuit" },
   { chinese: "休闲连体泳衣", english: "casual one-piece swimsuit" },
   { chinese: "裙式连体泳衣", english: "dress swimsuit" },
   { chinese: "竞速泳衣", english: "competition swimsuit" },
   { chinese: "Gris泳衣（品牌）", english: "gris swimsuit" },
   { chinese: "单比基尼（露腰连体）", english: "monokini" },
-  { chinese: "学校泳衣", english: "school swimsuit" },
   { chinese: "弹弓泳衣", english: "slingshot swimsuit (sling bikini)" },
 
   // 风格
@@ -45,8 +38,6 @@ export const items: PromptItem[] = [
   { chinese: "波点比基尼", english: "polka dot bikini" },
   { chinese: "条纹连体泳衣", english: "striped one-piece swimsuit" },
   { chinese: "条纹比基尼", english: "striped bikini" },
-  { chinese: "G弦裤", english: "g-string" },
-  { chinese: "丁字裤", english: "thong" },
 
   // 颜色（连体泳衣示例）
   { chinese: "浅蓝绿连体泳衣", english: "aqua one-piece swimsuit" },
@@ -92,8 +83,6 @@ export const items: PromptItem[] = [
   { chinese: "纱笼（围裙）", english: "sarong" },
 
   // 隐含标签（带下划线的原标签，中文优化）
-  { chinese: "整理泳衣", english: "adjusting swimsuit" },
-  { chinese: "露臀泳衣", english: "assless swimsuit" },
   { chinese: "格纹泳衣", english: "checkered swimsuit" },
   { chinese: "交叉带泳衣", english: "cross swimsuit" },
   { chinese: "露裆泳衣", english: "crotchless swimsuit" },

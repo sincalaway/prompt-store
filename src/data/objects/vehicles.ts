@@ -461,23 +461,12 @@ export const items: PromptItem[] = [
   { chinese: "铁拳反坦克火箭筒", english: "panzerfaust" },
 
   // Combat
-  { chinese: "海湾战争", english: "gulf war" },
-  { chinese: "朝鲜战争", english: "korean war" },
-  { chinese: "越南战争", english: "vietnam war" },
-  { chinese: "第一次世界大战", english: "world war i" },
-  { chinese: "第二次世界大战", english: "world war ii" },
 
   // Markings/Symbols
   { chinese: "巴尔肯十字", english: "balkenkreuz" },
   { chinese: "V形纹", english: "chevron" },
-  { chinese: "徽章", english: "emblem" },
   { chinese: "锤子镰刀", english: "hammer and sickle" },
-  { chinese: "铁十字勋章", english: "iron cross" },
-  { chinese: "痛车涂装", english: "itasha" },
   { chinese: "入侵条纹", english: "invasion stripes" },
-  { chinese: "旭日旗", english: "rising sun flag" },
-  { chinese: "红星", english: "red star" },
-  { chinese: "大卫之星", english: "star of david" },
   { chinese: "万字符", english: "swastika" },
   { chinese: "Z字符", english: "Z (russian symbol)" },
 
@@ -487,7 +476,6 @@ export const items: PromptItem[] = [
 
   // Vehicle gear
   { chinese: "耳机", english: "headphones" },
-  { chinese: "头盔", english: "helmet" },
   { chinese: "坦克炮弹", english: "tank shell" },
   { chinese: "喉麦", english: "throat microphone" }
 ];

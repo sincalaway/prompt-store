@@ -77,7 +77,6 @@ export const items: PromptItem[] = [
   { chinese: "内裤内穿连裤袜", english: "panties under pantyhose", nsfw: true },
   { chinese: "布鲁马内裤", english: "panties under buruma", nsfw: true },
   { chinese: "内裤勒痕", english: "pantylines", nsfw: true },
-  { chinese: "内裤走光", english: "pantyshot", nsfw: true },
   { chinese: "若隐若现的内裤", english: "implied pantyshot", nsfw: true },
   { chinese: "裙底风光", english: "upskirt", nsfw: true },
 

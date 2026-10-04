@@ -10,7 +10,6 @@ export const items: PromptItem[] = [
   { chinese: "白化病", english: "albino" },
   { chinese: "苍白皮肤", english: "pale skin" },
   { chinese: "古铜色", english: "tan" },
-  { chinese: "晒痕", english: "tanlines" },
   { chinese: "晒痕纹身", english: "tan tattoo" },
 
   // Unnatural colors

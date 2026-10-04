@@ -3,13 +3,10 @@ import type { PromptItem } from '../../types';
 export const items: PromptItem[] = [
   // anatomy of shoulders
   { chinese: "宽肩", english: "broad shoulders" },
-  { chinese: "后颈", english: "nape" },
   { chinese: "肩胛骨", english: "shoulder blades" },
 
   // attire for shoulders
-  { chinese: "肩章", english: "epaulettes" },
   { chinese: "肩甲", english: "pauldrons" },
-  { chinese: "泡泡袖", english: "puffy sleeves" },
   { chinese: "垫肩", english: "shoulder pads" },
 
   // other attire, on shoulders
@@ -19,11 +16,9 @@ export const items: PromptItem[] = [
   // exposed shoulders
   { chinese: "裸露的肩膀", english: "bare shoulders" },
   { chinese: "露肩装（滑落式）", english: "off shoulder" },
-  { chinese: "肩带滑落", english: "strap slip" },
 
   // clothing physically designed to leave the shoulders bare
   { chinese: "低宽领口", english: "low and wide-cut necklines" },
-  { chinese: "露肩衬衫", english: "off-shoulder shirt" },
   { chinese: "露肩裙", english: "off-shoulder dress" },
   { chinese: "露肩毛衣", english: "off-shoulder sweater" },
   { chinese: "露肩外套", english: "off-shoulder jacket" },
@@ -33,9 +28,7 @@ export const items: PromptItem[] = [
   { chinese: "露肩紧身衣", english: "off-shoulder leotard" },
 
   // sleeveless clothes
-  { chinese: "无袖衬衫", english: "sleeveless shirt" },
   { chinese: "无袖裙", english: "sleeveless dress" },
-  { chinese: "无袖毛衣", english: "sleeveless sweater" },
   { chinese: "无袖外套", english: "sleeveless jacket" },
   { chinese: "无袖大衣", english: "sleeveless coat" },
 
@@ -46,7 +39,6 @@ export const items: PromptItem[] = [
   { chinese: "无肩带胸罩", english: "strapless bra" },
   { chinese: "无肩带比基尼", english: "strapless bikini" },
   { chinese: "无肩带连体泳衣", english: "strapless one-piece swimsuit" },
-  { chinese: "无肩带紧身衣", english: "strapless leotard" },
 
   // asymmetrical, diagonal-shaped necklines
   { chinese: "单肩衬衫", english: "single-shoulder shirt" },
@@ -90,6 +82,5 @@ export const items: PromptItem[] = [
   // misc
   { chinese: "发垂过肩", english: "hair over shoulder" },
   { chinese: "回头望", english: "over shoulder" },
-  { chinese: "单肩包", english: "shoulder bag" },
   { chinese: "肩挂手机", english: "shoulder phone" },
 ];

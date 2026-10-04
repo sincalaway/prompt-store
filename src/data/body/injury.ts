@@ -26,7 +26,6 @@ export const items: PromptItem[] = [
   { chinese: "瘫痪", english: "paralysis" },
 
   // Coverings and bindings
-  { chinese: "创可贴", english: "bandaid" },
   { chinese: "膝贴", english: "bandaid on knee" },
   { chinese: "臂贴", english: "bandaid on arm" },
   { chinese: "腿贴", english: "bandaid on leg" },
@@ -35,10 +34,8 @@ export const items: PromptItem[] = [
   { chinese: "耳贴", english: "bandaid on ear" },
   { chinese: "额贴", english: "bandaid on forehead" },
   { chinese: "鼻贴", english: "bandaid on nose" },
-  { chinese: "绷带", english: "bandages" },
   { chinese: "面绷", english: "bandage on face" },
   { chinese: "单眼绷", english: "bandage over one eye" },
-  { chinese: "眼罩", english: "eyepatch" },
   { chinese: "晒褶", english: "sarashi" },
   { chinese: "吊臂带", english: "arm sling" },
 
@@ -51,7 +48,6 @@ export const items: PromptItem[] = [
   { chinese: "输液", english: "intravenous drip" },
   { chinese: "手术", english: "surgery" },
   { chinese: "针筒", english: "syringe" },
-  { chinese: "截肢者", english: "amputee" },
   { chinese: "药丸", english: "pill" },
   { chinese: "毒品", english: "drugs" },
   { chinese: "猎奇", english: "guro" },

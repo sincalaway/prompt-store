@@ -25,7 +25,6 @@ export const items: PromptItem[] = [
   { chinese: "能面", english: "noh mask" },
   { chinese: "氧气面罩", english: "oxygen mask" },
   { chinese: "内裤面具", english: "panty mask" },
-  { chinese: "瘟疫医生面具", english: "plague doctor mask" },
   { chinese: "南瓜面具", english: "pumpkin mask" },
   { chinese: "呼吸器", english: "respirator" },
   { chinese: "圣诞老人面具", english: "santa mask" },

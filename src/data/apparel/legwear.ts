@@ -3,12 +3,8 @@ import type { PromptItem } from '../../types';
 export const items: PromptItem[] = [
   // Main tags / Legwear by height (按高度分类的主标签)
   { chinese: "短袜", english: "socks" },
-  { chinese: "及膝袜", english: "kneehighs" },
-  { chinese: "过膝袜", english: "over-kneehighs" },
   { chinese: "大腿袜", english: "thighhighs" },
   { chinese: "及臀袜", english: "hiphighs" },
-  { chinese: "连裤袜", english: "pantyhose" },
-  { chinese: "紧身裤", english: "leggings" },
   { chinese: "分离式紧身裤", english: "detached leggings" },
 
   // Multiple Colors (多种颜色)

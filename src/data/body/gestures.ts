@@ -101,7 +101,6 @@ export const items: PromptItem[] = [
   { chinese: "手掌开花（\\||/）", english: "\\||/" },
   { chinese: "手掌开花（\\|||/）", english: "\\|||/" },
   { chinese: "爪爪", english: "claw pose" },
-  { chinese: "捂脸", english: "facepalm" },
   { chinese: "おひかえなすって（手势）", english: "ohikaenasutte" },
   { chinese: "摊手", english: "open hand" },
   { chinese: "伸手", english: "reaching" },
@@ -123,7 +122,6 @@ export const items: PromptItem[] = [
   { chinese: "意式捏手", english: "che vuoi?" },
 
   // 单手手势 - 张开手指数量可变
-  { chinese: "勾手指", english: "beckoning" },
   { chinese: "舔阴手势", english: "cunnilingus gesture" },
   { chinese: "口交手势", english: "fellatio gesture" },
   { chinese: "手交手势", english: "handjob gesture" },
@@ -141,7 +139,6 @@ export const items: PromptItem[] = [
   { chinese: "手比尾巴爱心", english: "heart tail" },
   { chinese: "双人尾巴比心", english: "heart tail duo" },
   { chinese: "虚握抓取", english: "holding with gesture" },
-  { chinese: "九字印", english: "kuji-in" },
   { chinese: "摇头/拒绝", english: "no (gesture)" },
   { chinese: "兰花指", english: "orchid fingers" },
   { chinese: "耸肩", english: "shrugging" },

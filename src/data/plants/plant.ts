@@ -8,8 +8,6 @@ export const items: PromptItem[] = [
   { chinese: "食虫植物", english: "carnivorous plant" },
   { chinese: "猪笼草", english: "pitcher plant" },
   { chinese: "捕蝇草", english: "venus flytrap" },
-  { chinese: "三叶草", english: "clover" },
-  { chinese: "花朵", english: "flower" },
   { chinese: "青草", english: "grass" },
   { chinese: "竹子", english: "bamboo" },
   { chinese: "香草植物", english: "herb" },
@@ -31,10 +29,7 @@ export const items: PromptItem[] = [
   // 植物部位
   { chinese: "树枝", english: "branch" },
   { chinese: "枝条", english: "twig" },
-  { chinese: "花朵", english: "flower" },
   { chinese: "果实", english: "fruit" },
-  { chinese: "花瓣", english: "petals" },
-  { chinese: "玫瑰花瓣", english: "rose petals" },
   { chinese: "植物细胞", english: "plant cell" },
   { chinese: "植物根系", english: "plant roots" },
   { chinese: "气生根", english: "aerial root" },
@@ -60,16 +55,13 @@ export const items: PromptItem[] = [
   
   // 动作
   { chinese: "农耕", english: "farming" },
-  { chinese: "园艺", english: "gardening" },
   
   // 地点
   { chinese: "农场", english: "farm" },
   { chinese: "田野", english: "field" },
   { chinese: "森林", english: "forest" },
   { chinese: "竹林", english: "bamboo forest" },
-  { chinese: "花园", english: "garden" },
   { chinese: "草原", english: "grasslands" },
   { chinese: "温室", english: "greenhouse" },
   { chinese: "自然风光", english: "nature" },
-  { chinese: "户外", english: "outdoors" },
 ];

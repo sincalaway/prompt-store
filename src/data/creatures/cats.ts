@@ -6,7 +6,6 @@ export const items: PromptItem[] = [
 
   { chinese: "猫头", english: "cathead" },
   { chinese: "巨猫", english: "giant cat" },
-  { chinese: "小猫", english: "kitten" },
   { chinese: "猫满为患", english: "too many cats" },
   
   // 猫品种
@@ -31,7 +30,6 @@ export const items: PromptItem[] = [
   { chinese: "斯芬克斯无毛猫", english: "Sphynx cat" },
   
   // 颜色
-  { chinese: "黑猫", english: "black cat" },
   { chinese: "蓝猫", english: "blue cat" },
   { chinese: "棕猫", english: "brown cat" },
   { chinese: "绿猫", english: "green cat" },
@@ -77,22 +75,16 @@ export const items: PromptItem[] = [
   { chinese: "腋下抱抱", english: "armpit hug" },
   { chinese: "猛吸一口", english: "huffing" },
   { chinese: "撸猫", english: "petting" },
-  { chinese: "摸头杀", english: "headpat" },
-  { chinese: "拎后颈", english: "scruffing" },
   
   // 猫科亲戚
   { chinese: "黑足猫", english: "Black-footed cat" },
-  { chinese: "黑豹", english: "Black panther" },
   { chinese: "狞猫", english: "Caracal" },
-  { chinese: "猎豹", english: "Cheetah" },
   { chinese: "美洲狮", english: "Cougar" },
   { chinese: "乔氏猫", english: "Geoffroy's cat" },
   { chinese: "西表山猫", english: "Iriomote cat" },
   { chinese: "美洲豹", english: "Jaguar" },
-  { chinese: "花豹", english: "Leopard" },
   { chinese: "豹猫", english: "Leopard cat" },
   { chinese: "中国豹猫", english: "Chinese leopard cat" },
-  { chinese: "狮子", english: "Lion" },
   { chinese: "猞猁", english: "Lynx" },
   { chinese: "长尾虎猫", english: "Margay" },
   { chinese: "虎猫", english: "Ocelot" },
@@ -100,7 +92,6 @@ export const items: PromptItem[] = [
   { chinese: "沙猫", english: "Sand cat" },
   { chinese: "薮猫", english: "Serval" },
   { chinese: "雪豹", english: "Snow leopard" },
-  { chinese: "老虎", english: "Tiger" },
   { chinese: "白虎", english: "White tiger" },
   
   // 特定位置的猫
@@ -125,11 +116,9 @@ export const items: PromptItem[] = [
   { chinese: "猫娘镂空", english: "cat cutout" },
   { chinese: "猫娘开裆裤", english: "cat cutout panties" },
   { chinese: "猫耳比基尼", english: "cat ear bikini" },
-  { chinese: "猫耳耳机", english: "cat ear headphones" },
   { chinese: "猫耳内裤", english: "cat ear panties" },
   { chinese: "猫耳耳环", english: "cat earrings" },
   { chinese: "猫耳朵", english: "cat ears" },
-  { chinese: "竖瞳", english: "slit pupils" },
   { chinese: "猫爪脚", english: "cat feet" },
   { chinese: "猫娘", english: "cat girl" },
   { chinese: "猫爪手套", english: "cat gloves" },
@@ -139,8 +128,6 @@ export const items: PromptItem[] = [
   { chinese: "猫头盔", english: "cat helmet" },
   { chinese: "猫耳兜帽", english: "cat hood" },
   { chinese: "猫娘蕾丝内衣", english: "cat lingerie" },
-  { chinese: "猫面具", english: "cat mask" },
-  { chinese: "动物鼻子", english: "animal nose" },
   { chinese: "猫挂饰", english: "cat ornament" },
   { chinese: "猫睡衣", english: "cat pajamas" },
   { chinese: "猫爪内裤", english: "cat print panties" },

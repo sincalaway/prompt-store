@@ -2,7 +2,6 @@ import type { PromptItem } from '../../types';
 
 export const items: PromptItem[] = [
   // 胸部基础
-  { chinese: "胸部", english: "breasts" },
   
   // 胸部尺寸
   { chinese: "平胸", english: "flat chest" },
@@ -37,16 +36,11 @@ export const items: PromptItem[] = [
   { chinese: "称重胸部", english: "weighing breasts" },
 
   // 能见度
-  { chinese: "乳晕", english: "areolae", nsfw: true },
-  { chinese: "乳晕露出", english: "areola slip", nsfw: true },
   { chinese: "深色乳晕", english: "dark areolae", nsfw: true },
   { chinese: "蒙氏腺", english: "glands of montgomery", nsfw: true },
-  { chinese: "大乳晕", english: "large areolae", nsfw: true },
   { chinese: "浅色乳晕", english: "light areolae", nsfw: true },
   { chinese: "背部乳肉", english: "backboob", nsfw: true},
   { chinese: "撑衣巨乳", english: "bursting breasts", nsfw: true},
-  { chinese: "乳沟", english: "cleavage", nsfw: true},
-  { chinese: "乳头", english: "nipples", nsfw: true},
   { chinese: "深色乳头", english: "dark nipples", nsfw: true},
   { chinese: "遮住乳头", english: "covered nipples", nsfw: true},
   { chinese: "乳头张开", english: "gaping nipples", nsfw: true},
@@ -55,15 +49,9 @@ export const items: PromptItem[] = [
   { chinese: "凹陷乳头", english: "inverted nipples", nsfw: true},
   { chinese: "长乳头", english: "long nipples", nsfw: true},
   { chinese: "露乳头", english: "nipple slip", nsfw: true},
-  { chinese: "无乳头", english: "no nipples", nsfw: true},
-  { chinese: "肿胀乳头", english: "puffy nipples", nsfw: true},
-  { chinese: "小乳头", english: "small nipples", nsfw: true},
   { chinese: "乳头长毛", english: "nipple hair", nsfw: true},
-  { chinese: "侧乳", english: "sideboob", nsfw: true},
-  { chinese: "下乳", english: "underboob", nsfw: true},
 
   { chinese: "露胸", english: "breast slip", nsfw: true},
-  { chinese: "露胸装", english: "breastless clothes", nsfw: true},
   { chinese: "双乳全露", english: "breasts out", nsfw: true},
   { chinese: "爆衣", english: "impossible shirt", nsfw: true},
   { chinese: "单侧露乳", english: "one breast out", nsfw: true},
@@ -82,24 +70,18 @@ export const items: PromptItem[] = [
 
   // 胸部衣物
   { chinese: "抹胸", english: "bandeau" },
-  { chinese: "比基尼", english: "bikini" },
   { chinese: "只穿比基尼下装", english: "bikini bottom only" },
   { chinese: "露乳比基尼", english: "cupless bikini" },
-  { chinese: "文胸", english: "bra" },
   { chinese: "露乳文胸", english: "cupless bra" },
   { chinese: "手伸进文胸", english: "hand in bra" },
-  { chinese: "不穿文胸", english: "no bra" },
-  { chinese: "哺乳文胸", english: "nursing bra" },
   { chinese: "托胸文胸", english: "shelf bra" },
   { chinese: "腰带式文胸", english: "belt bra" },
-  { chinese: "露胸装", english: "breastless clothes" },
   { chinese: "胸帘", english: "breast curtain" },
   { chinese: "塑身胸衣", english: "bustier" },
   { chinese: "中开襟", english: "center opening" },
   { chinese: "裹胸布", english: "chest binder" },
   { chinese: "灰姑娘露胸装", english: "Cinderella bust" },
   { chinese: "露乳沟镂空", english: "cleavage cutout" },
-  { chinese: "束腰胸衣", english: "corset" },
   { chinese: "框胸", english: "framed breasts" },
   { chinese: "露乳头镂空", english: "nipple cutout" },
   { chinese: "遮乳装", english: "nippleless clothes" },
@@ -107,7 +89,6 @@ export const items: PromptItem[] = [
   { chinese: "深V领", english: "plunging neckline" },
   { chinese: "灵之绳", english: "rei no himo" },
   { chinese: "晒衣带", english: "sarashi" },
-  { chinese: "紧身衬衫", english: "taut shirt" },
   { chinese: "下胸围", english: "underbust" },
 
   // 胸部与其他身体部位
@@ -157,7 +138,6 @@ export const items: PromptItem[] = [
   { chinese: "压制胸部", english: "breast suppress", nsfw: true},
   { chinese: "揉胸", english: "groping", nsfw: true},
   { chinese: "手臂夹在胸间", english: "arm between breasts", nsfw: true},
-  { chinese: "手伸进文胸", english: "hand in bra", nsfw: true},
   { chinese: "弹乳头", english: "nipple flick", nsfw: true},
   { chinese: "按压乳头", english: "nipple press", nsfw: true},
   { chinese: "推乳头", english: "nipple push", nsfw: true},
@@ -209,11 +189,9 @@ export const items: PromptItem[] = [
   { chinese: "抱着胸部当靠垫", english: "carried breast rest", nsfw: true},
   { chinese: "胸部搁在桌上", english: "breasts on table", nsfw: true},
   { chinese: "胸部搁在头上", english: "breasts on head", nsfw: true},
-  { chinese: "用胸部拍打", english: "slapping with breasts", nsfw: true},
   { chinese: "胸部压碎", english: "breast crush", nsfw: true},
   { chinese: "胸部压玻璃", english: "breasts on glass", nsfw: true},
   { chinese: "罩杯", english: "bust cup", nsfw: true},
-  { chinese: "遮挡胸部", english: "covering breasts", nsfw: true},
   { chinese: "精液在胸部上", english: "cum on breasts", nsfw: true},
   { chinese: "鸽子交配", english: "dovefucking", nsfw: true},
   { chinese: "多对乳房", english: "extra breasts", nsfw: true},

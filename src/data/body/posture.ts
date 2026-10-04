@@ -7,8 +7,6 @@ export const items: PromptItem[] = [
   { chinese: "躺卧", english: "lying" },
   { chinese: "跷二郎腿", english: "crossed legs" },
   { chinese: "胎儿式蜷缩", english: "fetal position" },
-  { chinese: "平躺", english: "on back" },
-  { chinese: "侧躺", english: "on side" },
   { chinese: "趴卧", english: "on stomach" },
   { chinese: "坐姿", english: "sitting" },
   { chinese: "蝴蝶坐", english: "butterfly sitting" },
@@ -36,7 +34,6 @@ export const items: PromptItem[] = [
   { chinese: "单腿站立", english: "standing on one leg" },
 
   // Movement of the body (身体移动)
-  { chinese: "保持平衡", english: "balancing" },
   { chinese: "匍匐爬行", english: "crawling" },
   { chinese: "待机动作", english: "idle animation" },
   { chinese: "空中", english: "midair" },
@@ -119,7 +116,6 @@ export const items: PromptItem[] = [
   { chinese: "双臂交叉", english: "crossed arms" },
   { chinese: "展臂秀肌肉", english: "flexing" },
   { chinese: "赞美太阳式", english: "praise the sun" },
-  { chinese: "伸手", english: "reaching" },
   { chinese: "耸肩摊手", english: "shrugging" },
   { chinese: "t形姿势", english: "t-pose" },
   { chinese: "a形姿势", english: "a-pose" },
@@ -139,7 +135,6 @@ export const items: PromptItem[] = [
 
   // Hips (髋部)
   { chinese: "体侧平衡", english: "contrapposto" },
-  { chinese: "腰椎前凸", english: "sway back" },
 
   // Legs (腿部)
   // Leg location (腿部位置)
@@ -166,11 +161,8 @@ export const items: PromptItem[] = [
   { chinese: "抬双膝", english: "knees up" },
 
   // Foot position (足部位置)
-  { chinese: "勾脚尖", english: "dorsiflexion" },
   { chinese: "内八字", english: "pigeon-toed" },
-  { chinese: "绷脚尖", english: "plantar flexion" },
   { chinese: "脚趾抓地", english: "toe scrunch" },
-  { chinese: "踮脚尖", english: "tiptoes" },
   { chinese: "踮脚亲吻", english: "tiptoe kiss" },
 
   // Posture of at least two characters (双人姿态)
@@ -184,7 +176,6 @@ export const items: PromptItem[] = [
   { chinese: "额抵额", english: "forehead-to-forehead" },
   { chinese: "头靠胸口", english: "head on chest" },
   { chinese: "头靠头", english: "heads together" },
-  { chinese: "牵手", english: "holding hands" },
   { chinese: "腿缠绕", english: "leg lock" },
   { chinese: "挽臂", english: "locked arms" },
   { chinese: "横卧膝上", english: "over the knee" },
@@ -217,7 +208,6 @@ export const items: PromptItem[] = [
   { chinese: "消防员式背负", english: "fireman's carry" },
   { chinese: "背背", english: "piggyback" },
   { chinese: "公主抱", english: "princess carry" },
-  { chinese: "肩上扛", english: "shoulder carry" },
   { chinese: "坐肩上", english: "sitting on shoulder" },
   { chinese: "站肩上", english: "standing on shoulder" },
 
@@ -229,7 +219,6 @@ export const items: PromptItem[] = [
   { chinese: "弓手姿势", english: "archer pose" },
   { chinese: "臂弯侮辱式", english: "bras d'honneur" },
   { chinese: "拱桥", english: "body bridge" },
-  { chinese: "体侧平衡", english: "contrapposto" },
   { chinese: "冒失娘姿势", english: "dojikko pose" },
   { chinese: "幽灵姿势", english: "ghost pose" },
   { chinese: "犬神家一族倒立", english: "inugami-ke no ichizoku pose" },
@@ -237,7 +226,6 @@ export const items: PromptItem[] = [
   { chinese: "大小姐姿势", english: "ojou-sama pose" },
   { chinese: "仙人掌姿势", english: "saboten pose" },
   { chinese: "对称手姿势", english: "symmetrical hand pose" },
-  { chinese: "胜利手势", english: "victory pose" },
   { chinese: "反派姿势", english: "villain pose" },
   { chinese: "僵尸姿势", english: "zombie pose" },
 

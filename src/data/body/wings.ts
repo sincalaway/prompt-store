@@ -73,7 +73,6 @@ export const items: PromptItem[] = [
   { chinese: "翼包", english: "winged bag" },
   { chinese: "翼发箍", english: "winged hairband" },
   { chinese: "翼帽", english: "winged hat" },
-  { chinese: "翼盔", english: "winged helmet" },
   { chinese: "翼鞋", english: "winged shoes" },
   { chinese: "翼伞", english: "winged umbrella" },
   { chinese: "穿衣露翅", english: "wings through clothes" },
@@ -135,7 +134,6 @@ export const items: PromptItem[] = [
   { chinese: "翅形结", english: "wing-shaped bow" },
 
   // Unrelated
-  { chinese: "翼领", english: "wing collar" },
 
   { chinese: "翅膀/翼", english: "wings" },
   { chinese: "蝙蝠翅膀", english: "bat_wings" },

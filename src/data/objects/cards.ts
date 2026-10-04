@@ -9,7 +9,6 @@ export const items: PromptItem[] = [
   // 图像构图和风格
   { chinese: "卡片背景", english: "card background" },
   { chinese: "卡片材质", english: "card (medium)" },
-  { chinese: "扑克牌主题", english: "playing card theme" },
   // 单张牌的基本位置
   { chinese: "悬浮卡牌", english: "floating card" },
   // 多张卡片及其排列
@@ -31,7 +30,6 @@ export const items: PromptItem[] = [
   { chinese: "黑卡", english: "black credit card" },
   { chinese: "礼品卡", english: "gift card" },
   { chinese: "Pasmo交通卡", english: "pasmo" },
-  { chinese: "电话卡", english: "phonecard" },
   { chinese: "Suica西瓜卡", english: "suica" },
   { chinese: "罚牌", english: "penalty card" },
   { chinese: "集换式卡牌", english: "trading card" },
@@ -49,12 +47,10 @@ export const items: PromptItem[] = [
   { chinese: "A牌", english: "ace" },
   { chinese: "二十一点", english: "blackjack" },
   { chinese: "小丑牌", english: "joker" },
-  { chinese: "扑克牌主题", english: "playing card theme" },
   { chinese: "扑克", english: "poker" },
   { chinese: "单人纸牌", english: "solitaire" },
   { chinese: "主题扑克牌", english: "themed playing card" },
   { chinese: "塔罗牌", english: "tarot" },
-  { chinese: "死神", english: "death" },
   { chinese: "正义", english: "justice" },
   { chinese: "力量", english: "strength" },
   { chinese: "节制", english: "temperance" },
