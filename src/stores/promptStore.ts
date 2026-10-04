@@ -257,7 +257,7 @@ export const usePromptStore = defineStore('prompt', () => {
   }
 
   // 操作方法
-  function toggleItem(item: Omit<SelectedItem, 'weight'>) {
+  function toggleItem(item: Omit<SelectedItem, 'weight' | 'weightEnabled'>) {
     const existingIndex = selectedItems.value.findIndex(
       i => i.category === item.category && 
            i.subCategory === item.subCategory && 
@@ -273,7 +273,8 @@ export const usePromptStore = defineStore('prompt', () => {
         activeTagIndex.value -= 1;
       }
     } else {
-      selectedItems.value.push({ ...item, weight: 1.0, weightEnabled: false });
+      // 普通添加不写入权重；只有点击加权按钮后才创建权重字段。
+      selectedItems.value.push({ ...item, weightEnabled: false });
     }
   }
 
@@ -285,8 +286,14 @@ export const usePromptStore = defineStore('prompt', () => {
     newWeight = Math.round(newWeight * 10) / 10;
     newWeight = Math.max(0.1, Math.min(5.0, newWeight));
     
-    item.weight = newWeight;
-    item.weightEnabled = Math.abs(newWeight - 1.0) >= 0.001;
+    if (Math.abs(newWeight - 1.0) < 0.001) {
+      // 回到默认值时清除权重，避免导出为带权重的 1.0。
+      delete item.weight;
+      item.weightEnabled = false;
+    } else {
+      item.weight = newWeight;
+      item.weightEnabled = true;
+    }
   }
 
   function removeItem(index: number) {

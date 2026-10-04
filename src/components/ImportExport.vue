@@ -277,7 +277,12 @@ const exportText = computed(() => {
       nsfw: item.nsfw || false,
     };
 
-    if (includeWeights.value && item.weight !== undefined) {
+    const hasWeight = item.weightEnabled === true || (
+      item.weightEnabled === undefined &&
+      item.weight !== undefined &&
+      Math.abs(item.weight - 1.0) >= 0.001
+    );
+    if (includeWeights.value && hasWeight && item.weight !== undefined) {
       data.weight = item.weight;
     }
 
@@ -392,11 +397,9 @@ const parseImportJSON = (text: string) => {
         chinese: item.chinese || "",
         english: item.english || "",
         nsfw: item.nsfw === true, // 默认为false
-        weight: preserveWeights.value
-          ? item.weight && !isNaN(item.weight)
-            ? item.weight
-            : 1.0
-          : 1.0,
+        weight: preserveWeights.value && item.weight !== undefined && !isNaN(item.weight)
+          ? Number(item.weight)
+          : undefined,
       };
     });
 
@@ -512,7 +515,9 @@ const executeImport = () => {
     chinese: item.chinese,
     english: item.english,
     nsfw: item.nsfw,
-    weight: preserveWeights.value ? item.weight : 1.0,
+    ...(preserveWeights.value && item.weight !== undefined && Math.abs(item.weight - 1.0) >= 0.001
+      ? { weight: item.weight, weightEnabled: true }
+      : { weightEnabled: false }),
     category: "imported",
     subCategory: "imported",
   }));

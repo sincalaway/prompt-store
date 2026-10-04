@@ -285,4 +285,15 @@ export const items: PromptItem[] = [
   { chinese: "原住民头饰", english: "native american headdress" },
   { chinese: "战冠", english: "warbonnet" },
   { chinese: "面纱", english: "veil" },
+
+  { chinese: "裸体披风", english: "naked_cape", nsfw: true },
+  { chinese: "头顶光环", english: "halo" },
+  { chinese: "东金帽子", english: "tokin_hat" },
+  { chinese: "迷你礼帽", english: "mini_top_hat" },
+  { chinese: "护士帽", english: "nurse_cap" },
+  { chinese: "三重冕", english: "tiara" },
+  { chinese: "皇冠", english: "crown" },
+  { chinese: "女仆头饰", english: "maid_headdress" },
+  { chinese: "披肩/斗篷/披风", english: "cape" },
+  { chinese: "卫衣", english: "hoodie" },
 ];

@@ -236,4 +236,11 @@ export const items: PromptItem[] = [
   { chinese: "Tawawa挑战", english: "Tawawa challenge", nsfw: true},
   { chinese: "胸肌上放物体", english: "object on pectorals", nsfw: true},
   { chinese: "欧派挑战", english: "oppai challenge", nsfw: true},
+
+  { chinese: "贫乳(A", english: "flat_chest", nsfw: true },
+  { chinese: "小胸部(B", english: "small_breasts", nsfw: true },
+  { chinese: "中等胸部(C", english: "medium_breasts", nsfw: true },
+  { chinese: "大胸部(D", english: "large_breasts", nsfw: true },
+  { chinese: "巨乳(E", english: "huge_breasts", nsfw: true },
+  { chinese: "魔乳(F", english: "gigantic_breasts", nsfw: true },
 ];

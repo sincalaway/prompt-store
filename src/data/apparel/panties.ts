@@ -128,4 +128,15 @@ export const items: PromptItem[] = [
 
   // Memes（梗）
   { chinese: "它们不是内裤", english: "they're not panties", nsfw: true },
+
+  { chinese: "内裤拉下来", english: "panty_pull", nsfw: true },
+  { chinese: "没内裤", english: "no_panties", nsfw: true },
+  { chinese: "三角裤给你看", english: "trefoil", nsfw: true },
+  { chinese: "白色内裤", english: "white_panties", nsfw: true },
+  { chinese: "粉红内裤", english: "pink_panties", nsfw: true },
+  { chinese: "条纹内裤", english: "striped_panties", nsfw: true },
+  { chinese: "低腰式内裤", english: "lowleg_panties/low_leg_panties", nsfw: true },
+  { chinese: "系带式内裤", english: "side-tie_panties/himopan", nsfw: true },
+  { chinese: "日式丁字裤", english: "fundoshi", nsfw: true },
+  { chinese: "渔网袜", english: "fishnet_pantyhose", nsfw: true },
 ];

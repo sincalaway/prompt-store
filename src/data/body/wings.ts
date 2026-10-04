@@ -136,4 +136,10 @@ export const items: PromptItem[] = [
 
   // Unrelated
   { chinese: "翼领", english: "wing collar" },
+
+  { chinese: "翅膀/翼", english: "wings" },
+  { chinese: "蝙蝠翅膀", english: "bat_wings" },
+  { chinese: "蝴蝶翅膀", english: "butterfly_wings" },
+  { chinese: "黑色之翼", english: "black_wings" },
+  { chinese: "恶魔之翼", english: "demon_wings" },
 ];

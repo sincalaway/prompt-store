@@ -162,7 +162,7 @@ const currentCategoryCount = computed(() => {
 const allSubCategories = computed(() => {
   const categories = currentMainConfig.value?.subCategories || [];
   return categories.map((cat) => {
-    const key = `${store.currentMainCategory}/${cat.fileName}`;
+    const key = `${store.currentMainCategory}/${cat.key}`;
     const totalCount = subCategoryCounts.value[key] || 0;
     const nsfwCount = subCategoryNSFWCounts.value[key] || 0;
     const nonNSFWCount = totalCount - nsfwCount;
@@ -183,7 +183,9 @@ const filteredSubCategories = computed(() => {
   if (store.showNSFW) {
     return allSubCategories.value;
   } else {
-    return allSubCategories.value.filter((cat) => !cat.nsfw);
+    // 混合分类仍应显示，其中的 NSFW 条目由 displayItems 单独过滤。
+    // 只有完全没有 SFW 条目的分类才在 SFW 模式下隐藏。
+    return allSubCategories.value.filter((cat) => cat.nonNSFWCount > 0);
   }
 });
 
@@ -258,7 +260,7 @@ const loadAllSubCategoryCounts = async () => {
   const nsfwCounts: Record<string, number> = {};
 
   for (const cat of categories) {
-    const key = `${mainCategory}/${cat.fileName}`;
+    const key = `${mainCategory}/${cat.key}`;
     const items = await loadPromptItems(mainCategory, cat.fileName);
     totalCounts[key] = items.length;
     nsfwCounts[key] = items.filter((item) => item.nsfw).length;

@@ -66,4 +66,12 @@ export const items: PromptItem[] = [
   { chinese: "舔耳朵", english: "licking ear" },
   { chinese: "缺角耳", english: "notched ear" },
   { chinese: "单耳下垂", english: "one ear down" },
+
+  { chinese: "动物耳朵", english: "animal_ears" },
+  { chinese: "狐狸耳朵", english: "fox_ears" },
+  { chinese: "兔耳", english: "bunny_ears" },
+  { chinese: "猫耳", english: "cat_ears" },
+  { chinese: "狗耳", english: "dog_ears" },
+  { chinese: "老鼠耳朵", english: "mouse_ears" },
+  { chinese: "尖耳", english: "pointy_ears" },
 ];

@@ -235,4 +235,6 @@ export const items: PromptItem[] = [
   { chinese: "外斜眼", english: "wall-eyed" },
   { chinese: "睁大眼睛", english: "wide-eyed" },
   { chinese: "皱眉闭眼", english: "wince" },
+
+  { chinese: "美丽细致的眼睛", english: "beautiful detailed eyes" },
 ];
