@@ -296,6 +296,13 @@ export const usePromptStore = defineStore('prompt', () => {
     }
   }
 
+  function enableWeight(index: number) {
+    const item = selectedItems.value[index];
+    if (!item) return;
+    item.weight = 0.1;
+    item.weightEnabled = true;
+  }
+
   function removeItem(index: number) {
     selectedItems.value.splice(index, 1);
     if (activeTagIndex.value === index) {
@@ -428,6 +435,7 @@ export const usePromptStore = defineStore('prompt', () => {
     
     toggleItem,
     adjustWeight,
+    enableWeight,
     removeItem,
     reorderItems,
     clearAll,

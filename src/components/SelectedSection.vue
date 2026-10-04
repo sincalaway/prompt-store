@@ -77,7 +77,7 @@ const onWeightAdjust = (index: number, delta: number) => {
 
 const onWeightAdd = (index: number) => {
   store.setActiveTagIndex(index);
-  store.adjustWeight(index, 0.1);
+  store.enableWeight(index);
 };
 
 const onDelete = (index: number) => {

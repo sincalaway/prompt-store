@@ -20,10 +20,10 @@
         class="weight-add-btn"
         :class="{ weighted: hasWeight }"
         type="button"
-        title="增加 0.1 权重，并生成带权重的英文提示词"
+        title="启用权重，起始值为 0.1"
         @click.stop="onWeightAdd"
       >
-        {{ hasWeight ? `加权 ${(item.weight ?? 1).toFixed(1)}` : "加权 +0.1" }}
+        {{ hasWeight ? `加权 ${(item.weight ?? 0.1).toFixed(1)}` : "加权 0.1" }}
       </button>
     </span>
 

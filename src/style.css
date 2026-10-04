@@ -395,6 +395,31 @@ h1, h2, p { margin: 0; } h1 { font-size: 18px; letter-spacing: -.02em; } h2 { fo
   .main-content .col-selected .weight-add-btn { font-size: 8px; padding: 3px 5px; }
 }
 
+/* 分类栏精修：按钮多时横向滚动，不挤压内容区；同时补充键盘焦点样式。 */
+.category-bar {
+  display: flex;
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3a506c transparent;
+}
+.category-bar::-webkit-scrollbar { height: 5px; }
+.category-bar::-webkit-scrollbar-thumb { background: #3a506c; border-radius: 99px; }
+.category-btn { flex: 0 0 auto; white-space: nowrap; }
+.category-btn:focus-visible,
+.sub-btn:focus-visible,
+.weight-add-btn:focus-visible,
+.weight-btn:focus-visible,
+.delete-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.sub-btn { transition: color .16s ease, background .16s ease, border-color .16s ease, transform .16s ease; }
+@media (max-width: 560px) {
+  .category-bar { margin-right: -3px; padding-right: 3px; }
+  .category-btn { padding-left: 9px !important; padding-right: 9px !important; }
+}
+
 /* 深色主题 UI 精修：保持原有蓝灰底色与绿色强调色 */
 .app-shell {
   border-color: rgba(131,184,255,.22);
