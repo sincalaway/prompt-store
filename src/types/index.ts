@@ -9,6 +9,7 @@ export interface SelectedItem extends PromptItem {
   category: string;
   subCategory: string;
   weight?: number;
+  weightEnabled?: boolean;
 }
 
 export interface SubCategoryConfig {

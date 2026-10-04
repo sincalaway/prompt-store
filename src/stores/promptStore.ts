@@ -191,10 +191,17 @@ export const usePromptStore = defineStore('prompt', () => {
 
   // 计算属性
   const totalCount = computed(() => selectedItems.value.length);
+
+  const isWeightEnabled = (item: SelectedItem): boolean => {
+    // 新数据由按钮显式开启；兼容旧缓存中已有的非 1.0 权重。
+    return item.weightEnabled === true || (
+      item.weightEnabled === undefined && Math.abs((item.weight ?? 1.0) - 1.0) >= 0.001
+    );
+  };
   
   const getEnglishWithWeight = (item: SelectedItem): string => {
     const weight = item.weight ?? 1.0;
-    if (Math.abs(weight - 1.0) < 0.001) return item.english;
+    if (!isWeightEnabled(item) || Math.abs(weight - 1.0) < 0.001) return item.english;
     return `(${item.english}:${weight.toFixed(1)})`;
   };
 
@@ -215,7 +222,7 @@ export const usePromptStore = defineStore('prompt', () => {
         seen.add(key);
 
         const weight = item.weight ?? 1.0;
-        if (Math.abs(weight - 1.0) < 0.001) return english;
+        if (!isWeightEnabled(item) || Math.abs(weight - 1.0) < 0.001) return english;
         return `(${english}:${weight.toFixed(1)})`;
       })
       .filter(Boolean)
@@ -266,7 +273,7 @@ export const usePromptStore = defineStore('prompt', () => {
         activeTagIndex.value -= 1;
       }
     } else {
-      selectedItems.value.push({ ...item, weight: 1.0 });
+      selectedItems.value.push({ ...item, weight: 1.0, weightEnabled: false });
     }
   }
 
@@ -279,6 +286,7 @@ export const usePromptStore = defineStore('prompt', () => {
     newWeight = Math.max(0.1, Math.min(5.0, newWeight));
     
     item.weight = newWeight;
+    item.weightEnabled = Math.abs(newWeight - 1.0) >= 0.001;
   }
 
   function removeItem(index: number) {

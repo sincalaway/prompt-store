@@ -61,7 +61,12 @@ const emit = defineEmits<{
   (e: "delete", index: number): void;
 }>();
 
-const hasWeight = computed(() => Math.abs((props.item.weight ?? 1) - 1) > 0.001);
+const hasWeight = computed(() => {
+  const weight = props.item.weight ?? 1;
+  return props.item.weightEnabled === true || (
+    props.item.weightEnabled === undefined && Math.abs(weight - 1) > 0.001
+  );
+});
 const weightedEnglish = computed(() => {
   const weight = props.item.weight ?? 1;
   return hasWeight.value ? `(${props.item.english}:${weight.toFixed(1)})` : props.item.english;
